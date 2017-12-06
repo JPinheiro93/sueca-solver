@@ -3,7 +3,7 @@ using System.Collections.Generic;
 
 namespace SuecaSolver
 {
-    public class RBOPlayer : RPlayer
+    public class RBOPlayer : HybridPlayer
     {
 
         public RBOPlayer(int id, List<int> initialHand, int trumpCard, int trumpPlayerId)

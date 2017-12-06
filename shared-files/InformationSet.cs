@@ -60,9 +60,11 @@ namespace SuecaSolver
             MyTeamPoints = 0;
             OtherTeamPoints = 0;
             remainingTrumps = 10;
-            
-            tricks = new List<Trick>();
-            tricks.Add(new Trick(Trump));
+
+            tricks = new List<Trick>
+            {
+                new Trick(Trump)
+            };
         }
 
         internal int GetCurrentTrickResponsible()
@@ -316,7 +318,7 @@ namespace SuecaSolver
             return currentTrick.GetTrickIncrease();
         }
 
-        private bool checkPlayersHaveAllSuits(Dictionary<int,List<int>> suitHasPlayer)
+        private bool CheckPlayersHaveAllSuits(Dictionary<int,List<int>> suitHasPlayer)
         {
             if (suitHasPlayer[0].Count == 3 &&
                 suitHasPlayer[1].Count == 3 &&
@@ -363,7 +365,7 @@ namespace SuecaSolver
                 int trumpPlayerIDindex = ((TrumpPlayerId - id + 4) % 4) - 1;
                 sampledHands[trumpPlayerIDindex].Add(TrumpCard);
             }
-            if (checkPlayersHaveAllSuits(suitHasPlayer))
+            if (CheckPlayersHaveAllSuits(suitHasPlayer))
             {
                 unknownOwnerCards.SampleHands(ref sampledHands);
             }
@@ -408,7 +410,7 @@ namespace SuecaSolver
             return hands;
         }
 
-        private List<int> getHighestPerSuit(List<int> cards)
+        private List<int> GetHighestPerSuit(List<int> cards)
         {
             cards.Sort();
             List<int> list = new List<int>();
@@ -440,7 +442,7 @@ namespace SuecaSolver
             return list;
         }
 
-        private List<int> counterPerSuit(List<int> cards)
+        private List<int> CounterPerSuit(List<int> cards)
         {
             List<int> list = new List<int>();
             int lastSuit = (int) Suit.None;
@@ -460,7 +462,7 @@ namespace SuecaSolver
             return list;
         }
 
-        private int getRandomStrawCard(List<int> possibleCards)
+        private int GetRandomStrawCard(List<int> possibleCards)
         {
             List<int> strawCards = new List<int>();
             int randomIndex;
@@ -489,20 +491,20 @@ namespace SuecaSolver
                 return possibleMoves[0];
             }
 
-            List<int> highestPerSuit = getHighestPerSuit(hand);
+            List<int> highestPerSuit = GetHighestPerSuit(hand);
 
             if (highestPerSuit.Count == 1)
             {
                 possibleMoves.Sort();
                 int highestCard = possibleMoves[possibleMoves.Count - 1];
-                if (shouldPlay(highestCard))
+                if (ShouldPlay(highestCard))
                 {
                     return highestCard;
                 }
                 else
                 {
                     //return possibleMoves[0];
-                    return getRandomStrawCard(possibleMoves);
+                    return GetRandomStrawCard(possibleMoves);
                 }
             }
             else
@@ -510,7 +512,7 @@ namespace SuecaSolver
                 int trickSize = tricks[tricks.Count - 1].GetCurrentTrickSize();
                 if (trickSize == 4 || trickSize == 0)
                 {
-                    List<int> counterList = counterPerSuit(hand);
+                    List<int> counterList = CounterPerSuit(hand);
                     Random r = new Random();
 
                     //debug
@@ -522,7 +524,7 @@ namespace SuecaSolver
                     for (int i = 0; i < highestPerSuit.Count; i++)
                     {
                         int highestCard = highestPerSuit[i];
-                        if (shouldPlay(highestCard))
+                        if (ShouldPlay(highestCard))
                         {
                             if (counterList[i] > r.Next(3, 6) && Card.GetSuit(highestCard) == Trump)
                             {
@@ -539,19 +541,19 @@ namespace SuecaSolver
                         }
                     }
                     //return possibleMoves[0];
-                    return getRandomStrawCard(possibleMoves);
+                    return GetRandomStrawCard(possibleMoves);
                 }
                 else
                 {
                     //we may check if our mate has cut the trick and chose an highest card
                     possibleMoves.Sort(new DescendingComparer());
                     //return possibleMoves[0];
-                    return getRandomStrawCard(possibleMoves);
+                    return GetRandomStrawCard(possibleMoves);
                 }
             }
         }
 
-        private bool shouldPlay(int highestCard)
+        private bool ShouldPlay(int highestCard)
         {
             int highestCardSuit = Card.GetSuit(highestCard);
             int highestCardRank = Card.GetRank(highestCard);
