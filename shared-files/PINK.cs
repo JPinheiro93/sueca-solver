@@ -5,7 +5,7 @@ using System.Threading.Tasks;
 
 namespace SuecaSolver
 {
-    public static class PIMC
+    public static class PINK
     {
         // version = 0 - The search is the MinMax algorithm
         // version = 1 - The search strats at the last 5 tricks with the MinMax algorithm, until there choices are rulebased
@@ -98,85 +98,19 @@ namespace SuecaSolver
 
 
             int bestCard = -1;
-            int bestValue = Int32.MinValue;
+            int bestValue = Int32.MaxValue;
 
-            int suitseven = 4, suitace = 5;
-            int valueseven = Int32.MinValue;
-            int valueace = valueseven + 1;
-            int key = -1;
-            Console.WriteLine("Printing dictionary:");
-
-            foreach (KeyValuePair<int, int> card in dict)
-            {
-                if (Card.GetRank(card.Key) == 8)
-                {
-                    suitseven = Card.GetSuit(card.Key);
-                    valueseven = card.Value;
-                }
-
-                if (Card.GetRank(card.Key) == 9)
-                {
-                    suitace = Card.GetSuit(card.Key);
-                    valueace = card.Value;
-                }
-
-                if (suitseven == suitace)
-                {
-                    if (valueseven > valueace)
-                    {
-                        Console.Write("-----" + card.Key + "----");
-                        //suitace *= 10;
-                        //int key = 9 + suitace;
-                        // var newEntry = new KeyValuePair<int, int>(card.Key, valueseven);
-                        key = card.Key;
-                        
-                    }
-                }
-                Console.Write(Card.ToString(card.Key) + ":" + card.Value + ", ");
-
-            }
-            if(key != -1)
-            {
-                dict.Remove(key);
-                dict.Add(key, valueseven);
-            }
-
-            Console.WriteLine();
-
+            //Console.WriteLine("Printing dictionary:");
             foreach (KeyValuePair<int, int> cardValue in dict)
             {
-                
-                if (cardValue.Value >= bestValue){
-                    bool flag = false;
-
-                    if (Card.ToString(cardValue.Key)[0] == '7')
-                    {
-                        foreach (KeyValuePair<int, int> card in dict)
-                        {
-                            if (Card.ToString(card.Key)[0] == 'A' && Card.ToString(card.Key)[1] == Card.ToString(cardValue.Key)[1])
-                            {
-                                flag = true;
-                                //Console.WriteLine("Switch 7 with A");
-                            }
-                        }
-                    }
-
-                    if (!flag)
-                    {
-                            bestValue = (int)cardValue.Value;
-                            bestCard = cardValue.Key;
-                            Console.WriteLine("bestCard: "+Card.ToString(bestCard));
-                    }
-                    else
-                    {
-                        Console.WriteLine("Switch 7 with A");
-
-                    }
-
+               // Console.Write(Card.ToString(cardValue.Key) + ":" + cardValue.Value + ", ");
+                if (cardValue.Value < bestValue)
+                {
+                    bestValue = (int)cardValue.Value;
+                    bestCard = cardValue.Key;
                 }
-
             }
-            Console.WriteLine();
+            //Console.WriteLine("");
 
             if (bestCard == -1)
             {
@@ -224,11 +158,11 @@ namespace SuecaSolver
                     });
 
             int bestCard = -1;
-            int bestValue = Int32.MinValue;
+            int bestValue = Int32.MaxValue;
 
             foreach (KeyValuePair<int, int> cardValue in dict)
             {
-                if (cardValue.Value > bestValue)
+                if (cardValue.Value <= bestValue)
                 {
                     bestValue = (int)cardValue.Value;
                     bestCard = cardValue.Key;
@@ -336,11 +270,11 @@ namespace SuecaSolver
             sw.Stop();
 
             int bestCard = -1;
-            int bestValue = Int32.MinValue;
+            int bestValue = Int32.MaxValue;
 
             foreach (KeyValuePair<int, int> cardValue in dict)
             {
-                if (cardValue.Value >= bestValue)
+                if (cardValue.Value < bestValue)
                 {
                     bestValue = (int)cardValue.Value;
                     bestCard = cardValue.Key;
