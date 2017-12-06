@@ -26,6 +26,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+	<AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -66,9 +67,8 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\fatimalibs\Conditions.dll</HintPath>
     </Reference>
-    <Reference Include="EmoteEvents, Version=1.0.6243.26124, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\SERA\Binaries\Skene\EmoteEvents.dll</HintPath>
+    <Reference Include="EmoteEvents">
+      <HintPath>..\..\..\..\Desktop\Sueca\Skene1\EmoteEvents.dll</HintPath>
     </Reference>
     <Reference Include="EmotionalAppraisal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -109,13 +109,11 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\fatimalibs\SocialImportanceAsset.dll</HintPath>
     </Reference>
-    <Reference Include="SuecaMessages, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\sueca-messages\SuecaMessages\bin\Debug\SuecaMessages.dll</HintPath>
+    <Reference Include="SuecaMessages">
+      <HintPath>..\..\..\..\Desktop\Sueca\sueca-messages\SuecaMessages\bin\Debug\SuecaMessages.dll</HintPath>
     </Reference>
-    <Reference Include="SuecaTypes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\sueca-messages\SuecaTypes\bin\Debug\SuecaTypes.dll</HintPath>
+    <Reference Include="SuecaTypes">
+      <HintPath>..\..\..\..\Desktop\Sueca\sueca-messages\SuecaTypes\bin\Debug\SuecaTypes.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -124,9 +122,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Thalamus, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\SERA\Binaries\Thalamus\Thalamus.dll</HintPath>
+    <Reference Include="Thalamus">
+      <HintPath>..\..\..\..\Desktop\Sueca\Thalamus\Thalamus.dll</HintPath>
     </Reference>
     <Reference Include="Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>

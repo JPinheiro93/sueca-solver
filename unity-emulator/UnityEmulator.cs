@@ -110,7 +110,7 @@ namespace unity_emulator
 
         public override void ConnectedToMaster()
         {
-            emulateSingleGame();
+            EmulateSingleGame();
         }
 
         public override void Dispose()
@@ -118,7 +118,7 @@ namespace unity_emulator
         }
 
 
-        private void emulateGameEvents()
+        private void EmulateGameEvents()
         {
             Debug("<<<<<Emulator will simulate the first events of a session");
 
@@ -165,7 +165,7 @@ namespace unity_emulator
             //startPublisher.Play(2, c11);
         }
 
-        private void emulateSingleGame()
+        private void EmulateSingleGame()
         {
             Thread.Sleep(1000);
             startPublisher.SessionStart(0, 1, new int[] { 3 }, 1);
@@ -208,7 +208,7 @@ namespace unity_emulator
             int cardIndex, currentPlayerID = firstPlayerID;
 
 
-            startPublisher.GameStart(0, 3, 1, serializeCard(trumpCard), trumpCardPlayer, serializeCards(playersHand[3]));
+            startPublisher.GameStart(0, 3, 1, SerializeCard(trumpCard), trumpCardPlayer, SerializeCards(playersHand[3]));
             SuecaGame game = new SuecaGame(SuecaSolver.Card.GetSuit(trumpCard), firstPlayerID);
 
 
@@ -252,7 +252,7 @@ namespace unity_emulator
                     _playInfo = "";
                 }
 
-                startPublisher.Play(currentPlayerID, serializeCard(chosenCard), playInfo);
+                startPublisher.Play(currentPlayerID, SerializeCard(chosenCard), playInfo);
 
                 game.PlayCard(currentPlayerID, chosenCard);
                 currentHand.Remove(chosenCard);
@@ -274,7 +274,7 @@ namespace unity_emulator
             Console.ReadLine();
         }
 
-        private string[] serializeCards(List<int> list)
+        private string[] SerializeCards(List<int> list)
         {
             string[] serializedCards = new string[list.Count];
 
@@ -288,7 +288,7 @@ namespace unity_emulator
             return serializedCards;
         }
 
-        private string serializeCard(int card)
+        private string SerializeCard(int card)
         {
             SuecaSolver.Rank cardRank = (SuecaSolver.Rank)SuecaSolver.Card.GetRank(card);
             SuecaSolver.Suit cardSuit = (SuecaSolver.Suit)SuecaSolver.Card.GetSuit(card);

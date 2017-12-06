@@ -50,13 +50,13 @@ namespace ConsoleApp1
                 Console.WriteLine("{0} is not a valid file or directory.", path);
             }
 
-            printEmotionsFrequenciesPerSession();
+            PrintEmotionsFrequenciesPerSession();
             //printUtterancesFrequencies();
             Console.ReadLine();
 
         }
 
-        public static void printUtterancesFrequencies()
+        public static void PrintUtterancesFrequencies()
         {
             foreach (var u in utterances)
             {
@@ -64,7 +64,7 @@ namespace ConsoleApp1
             }
         }
 
-        public static void printEmotionsFrequenciesPerSession()
+        public static void PrintEmotionsFrequenciesPerSession()
         {
             foreach (string session in emotionsPerSession.Keys)
             {
