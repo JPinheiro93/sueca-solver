@@ -206,11 +206,11 @@ namespace EmotionalPlayer
 
             if (_nameId == 1)
             {
-                ev1.AddPropertyChange("Dialogue(Style)", "A", Consts.DEFAULT_SUBJECT);
+                ev1.AddPropertyChange("Dialogue(Style)", "HW", Consts.DEFAULT_SUBJECT);
             }
             else
             {
-                ev1.AddPropertyChange("Dialogue(Style)", "B", Consts.DEFAULT_SUBJECT);
+                ev1.AddPropertyChange("Dialogue(Style)", "LW", Consts.DEFAULT_SUBJECT);
             }
             ev1.AddPropertyChange(Consts.ID_PROPERTY, _id.ToString(), Consts.DEFAULT_SUBJECT);
             ev1.Finished = true;
