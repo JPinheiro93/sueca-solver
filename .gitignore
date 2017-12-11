@@ -36,3 +36,5 @@ Scenarios/Logs/*.rpc
 
 #FAtiMA
 authoringtools/*
+
+/.vs/
