@@ -6,8 +6,8 @@
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
     <ProjectGuid>{00570E6A-16AC-46F1-B4C9-EC902E4086B9}</ProjectGuid>
     <OutputType>Exe</OutputType>
-    <RootNamespace>count-utterances</RootNamespace>
-    <AssemblyName>count-utterances</AssemblyName>
+    <RootNamespace>CountUtterances</RootNamespace>
+    <AssemblyName>CountUtterances</AssemblyName>
     <TargetFrameworkVersion>v4.5.2</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>

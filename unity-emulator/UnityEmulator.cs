@@ -23,69 +23,74 @@ namespace unity_emulator
                 this.publisher = publisher;
             }
 
-            public void SessionStart(int sessionId, int numGames, int[] agentsIds, int floorId)
+            public void SessionStart(int sessionId, int numGames, int[] agentsIds, int shouldGreet)
             {
-                publisher.SessionStart(sessionId, numGames, agentsIds, floorId);
+                publisher.SessionStart(sessionId, numGames, agentsIds, shouldGreet);
             }
 
-            public void GameStart(int gameId, int playerId, int teamId, string trumpCard, int trumpCardPlayer, string[] cards, int floorId)
+            public void GameStart(int gameId, int playerId, int teamId, string trumpCard, int trumpCardPlayer, string[] cards)
             {
-                publisher.GameStart(gameId, playerId, teamId, trumpCard, trumpCardPlayer, cards, floorId);
+                publisher.GameStart(gameId, playerId, teamId, trumpCard, trumpCardPlayer, cards);
             }
 
-            public void GameEnd(int team0Score, int team1Score, int floorId)
+            public void GameEnd(int team0Score, int team1Score)
             {
-                publisher.GameEnd(team0Score, team1Score, floorId);
+                publisher.GameEnd(team0Score, team1Score);
             }
 
-            public void SessionEnd(int sessionId, int team0Score, int team1Score, int floorId)
+            public void SessionEnd(int sessionId, int team0Score, int team1Score)
             {
-                publisher.SessionEnd(sessionId, team0Score, team1Score, floorId);
+                publisher.SessionEnd(sessionId, team0Score, team1Score);
             }
 
-            public void Shuffle(int playerId, int floorId)
+            public void Shuffle(int playerId)
             {
-                publisher.Shuffle(playerId, floorId);
+                publisher.Shuffle(playerId);
             }
 
-            public void Cut(int playerId, int floorId)
+            public void Cut(int playerId)
             {
-                publisher.Cut(playerId, floorId);
+                publisher.Cut(playerId);
             }
 
-            public void Deal(int playerId, int floorId)
+            public void Deal(int playerId)
             {
-                publisher.Deal(playerId, floorId);
+                publisher.Deal(playerId);
             }
 
-            public void ReceiveRobotCards(int playerId, int floorId)
+            public void ReceiveRobotCards(int playerId)
             {
-                publisher.ReceiveRobotCards(playerId, floorId);
+                publisher.ReceiveRobotCards(playerId);
             }
 
-            public void NextPlayer(int id, int floorId)
+            public void NextPlayer(int id)
             {
-                publisher.NextPlayer(id, floorId);
+                publisher.NextPlayer(id);
             }
 
-            public void TrickEnd(int winnerId, int trickPoints, int floorId)
+            public void TrickEnd(int winnerId, int trickPoints)
             {
-                publisher.TrickEnd(winnerId, trickPoints, floorId);
+                publisher.TrickEnd(winnerId, trickPoints);
             }
 
-            public void Play(int id, string card, string playInfo, int floorId)
+            public void Play(int id, string card, string playInfo)
             {
-                publisher.Play(id, card, playInfo, floorId);
+                publisher.Play(id, card, playInfo);
             }
 
-            public void Renounce(int playerId, int floorId)
+            public void Renounce(int playerId)
             {
-                publisher.Renounce(playerId, floorId);
+                publisher.Renounce(playerId);
+            }
+
+            public void ResetTrick()
+            {
+                publisher.ResetTrick();
             }
             
-            public void TrumpCard(string trumpCard, int trumpCardPlayer, int floorId)
+            public void TrumpCard(string trumpCard, int trumpCardPlayer)
             {
-                publisher.TrumpCard(trumpCard, trumpCardPlayer, floorId);
+                publisher.TrumpCard(trumpCard, trumpCardPlayer);
             }
         }
             
@@ -105,7 +110,7 @@ namespace unity_emulator
 
         public override void ConnectedToMaster()
         {
-            emulateSingleGame();
+            EmulateSingleGame();
         }
 
         public override void Dispose()
@@ -113,18 +118,18 @@ namespace unity_emulator
         }
 
 
-        private void emulateGameEvents()
+        private void EmulateGameEvents()
         {
             Debug("<<<<<Emulator will simulate the first events of a session");
 
             Thread.Sleep(5000);
             startPublisher.SessionStart(0, 1, new int[] {0}, 1);
             Thread.Sleep(10000);
-            startPublisher.Shuffle(0,1);
+            startPublisher.Shuffle(0);
             Thread.Sleep(5000);
-            startPublisher.Cut(2,1);
+            startPublisher.Cut(2);
             Thread.Sleep(5000);
-            startPublisher.Deal(3,1);
+            startPublisher.Deal(3);
 
             string c0 = new SuecaTypes.Card(SuecaTypes.Rank.Four, SuecaTypes.Suit.Diamonds).SerializeToJson();
             string c1 = new SuecaTypes.Card(SuecaTypes.Rank.Ace, SuecaTypes.Suit.Diamonds).SerializeToJson();
@@ -139,7 +144,7 @@ namespace unity_emulator
 
             Thread.Sleep(5000);
             Console.WriteLine("A Começar o jogo");
-            startPublisher.GameStart(0, 1, 1, c0, 0, new string[] { c0, c1, c2, c3, c4, c5, c6, c7, c8, c9 }, 1);
+            startPublisher.GameStart(0, 1, 1, c0, 0, new string[] { c0, c1, c2, c3, c4, c5, c6, c7, c8, c9 });
             //Thread.Sleep(5000);
             //startPublisher.NextPlayer(3);
             //Thread.Sleep(5000);
@@ -160,7 +165,7 @@ namespace unity_emulator
             //startPublisher.Play(2, c11);
         }
 
-        private void emulateSingleGame()
+        private void EmulateSingleGame()
         {
             Thread.Sleep(1000);
             startPublisher.SessionStart(0, 1, new int[] { 3 }, 1);
@@ -203,14 +208,14 @@ namespace unity_emulator
             int cardIndex, currentPlayerID = firstPlayerID;
 
 
-            startPublisher.GameStart(0, 3, 1, serializeCard(trumpCard), trumpCardPlayer, serializeCards(playersHand[3]), 1);
+            startPublisher.GameStart(0, 3, 1, SerializeCard(trumpCard), trumpCardPlayer, SerializeCards(playersHand[3]));
             SuecaGame game = new SuecaGame(SuecaSolver.Card.GetSuit(trumpCard), firstPlayerID);
 
 
             for (int i = 0; i < 40; i++)
             {
                 Console.WriteLine(i);
-                startPublisher.NextPlayer(currentPlayerID, 1);
+                startPublisher.NextPlayer(currentPlayerID);
 
                 currentHand = playersHand[currentPlayerID];
                 Console.WriteLine("||||||||||||||||||||||||||||||||||||||||||||||||||||");
@@ -247,7 +252,7 @@ namespace unity_emulator
                     _playInfo = "";
                 }
 
-                startPublisher.Play(currentPlayerID, serializeCard(chosenCard), playInfo, 1);
+                startPublisher.Play(currentPlayerID, SerializeCard(chosenCard), playInfo);
 
                 game.PlayCard(currentPlayerID, chosenCard);
                 currentHand.Remove(chosenCard);
@@ -255,7 +260,7 @@ namespace unity_emulator
 
                 if (i != 0 && i % 4 == 3)
                 {
-                    startPublisher.TrickEnd(game.GetCurrentTrickWinner(), game.GetCurrentTrickPoints(), 1);
+                    startPublisher.TrickEnd(game.GetCurrentTrickWinner(), game.GetCurrentTrickPoints());
                 }
             }
 
@@ -269,7 +274,7 @@ namespace unity_emulator
             Console.ReadLine();
         }
 
-        private string[] serializeCards(List<int> list)
+        private string[] SerializeCards(List<int> list)
         {
             string[] serializedCards = new string[list.Count];
 
@@ -283,7 +288,7 @@ namespace unity_emulator
             return serializedCards;
         }
 
-        private string serializeCard(int card)
+        private string SerializeCard(int card)
         {
             SuecaSolver.Rank cardRank = (SuecaSolver.Rank)SuecaSolver.Card.GetRank(card);
             SuecaSolver.Suit cardSuit = (SuecaSolver.Suit)SuecaSolver.Card.GetSuit(card);

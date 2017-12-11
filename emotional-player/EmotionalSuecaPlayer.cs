@@ -29,13 +29,13 @@ namespace EmotionalPlayer
         private int _currentPlayInTrickId;
 
         private Random _randomNumberGenerator;
-        private bool PendingRequest;
+        //private bool PendingRequest;
         public bool Talking;
         public bool SomeoneIsTalking;
-        private string pendingCategory;
-        private string pendingSubcategory;
-        private int requestCounter;
-        private bool Retrying;
+        //private string pendingCategory;
+        //private string pendingSubcategory;
+        //private int requestCounter;
+        //private bool Retrying;
         private int numRobots;
 
         public EmotionalSuecaPlayer(string clientName, string scenarioPath, string agentType, string charactersNames = "") : base(clientName, charactersNames)
@@ -206,11 +206,11 @@ namespace EmotionalPlayer
 
             if (_nameId == 1)
             {
-                ev1.AddPropertyChange("Dialogue(Style)", "A", Consts.DEFAULT_SUBJECT);
+                ev1.AddPropertyChange("Dialogue(Style)", "HW", Consts.DEFAULT_SUBJECT);
             }
             else
             {
-                ev1.AddPropertyChange("Dialogue(Style)", "B", Consts.DEFAULT_SUBJECT);
+                ev1.AddPropertyChange("Dialogue(Style)", "LW", Consts.DEFAULT_SUBJECT);
             }
             ev1.AddPropertyChange(Consts.ID_PROPERTY, _id.ToString(), Consts.DEFAULT_SUBJECT);
             ev1.Finished = true;
@@ -460,7 +460,7 @@ namespace EmotionalPlayer
                 //ev.AddPropertyChange(Consts.PLAY_INFO, playInfo, Consts.DEFAULT_SUBJECT);
 
 
-                ev.ChangeTagsAndMeanings(new string[] { "|rank|", "|suit|", "|playerID|", "|nextPlayerID|" }, new string[] { convertRankToPortuguese(msgRank.ToString()), convertSuitToPortuguese(msgSuit.ToString()), ((id+2)%4).ToString(), _ai.GetNextPlayerId().ToString() });
+                ev.ChangeTagsAndMeanings(new string[] { "|rank|", "|suit|", "|playerID|", "|nextPlayerID|" }, new string[] { ConvertRankToPortuguese(msgRank.ToString()), ConvertSuitToPortuguese(msgSuit.ToString()), ((id+2)%4).ToString(), _ai.GetNextPlayerId().ToString() });
                 ev.OtherIntInfos = new int[] { this._id };
                 ev.OtherStringInfos = new string[] { cardSerialized, playInfo };
 
@@ -509,7 +509,7 @@ namespace EmotionalPlayer
                 ev.AddPropertyChange(Consts.CURRENT_PLAYER, SubjectName(id), Consts.DEFAULT_SUBJECT);
                 _ai.AddPlay(id, myCard);
                 string[] tags = new string[] { "|rank|", "|suit|", "|playerID|", "|nextPlayerID|" };
-                string[] meanings = new string[] { convertRankToPortuguese(myRank.ToString()), convertSuitToPortuguese(mySuit.ToString()), id.ToString(), _ai.GetNextPlayerId().ToString() };
+                string[] meanings = new string[] { ConvertRankToPortuguese(myRank.ToString()), ConvertSuitToPortuguese(mySuit.ToString()), id.ToString(), _ai.GetNextPlayerId().ToString() };
                 ev.ChangeTagsAndMeanings(tags, meanings);
 
                 SuecaPub.GazeAtTarget("cardsZone");
@@ -658,7 +658,7 @@ namespace EmotionalPlayer
 
         }
 
-        private void retryRequest()
+        private void RetryRequest()
         {
             //requestCounter++;
             //RequestUtterance(pendingCategory, pendingSubcategory);
@@ -698,7 +698,7 @@ namespace EmotionalPlayer
 
         #region Auxiliary Methods
 
-        private string convertRankToPortuguese(string englishRank)
+        private string ConvertRankToPortuguese(string englishRank)
         {
             string portugueseRank = "";
             switch (englishRank)
@@ -739,7 +739,7 @@ namespace EmotionalPlayer
             return portugueseRank;
         }
 
-        private string convertSuitToPortuguese(string englishSuit)
+        private string ConvertSuitToPortuguese(string englishSuit)
         {
             string portugueseSuit = "";
             switch (englishSuit)
@@ -801,7 +801,7 @@ namespace EmotionalPlayer
             return subject;
         }
 
-        private bool isPartner(int id)
+        private bool IsPartner(int id)
         {
             return id == 1;
         }

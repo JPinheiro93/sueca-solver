@@ -3,12 +3,11 @@ using System.Collections.Generic;
 
 namespace SuecaSolver
 {
-    public class RBOPlayer : ArtificialPlayer
+    public abstract class RPlayer : ArtificialPlayer
     {
-        private InformationSet infoSet;
+        protected InformationSet infoSet;
 
-        public RBOPlayer(int id, List<int> initialHand, int trumpCard, int trumpPlayerId)
-            : base(id)
+        public RPlayer(int id, List<int> initialHand, int trumpCard, int trumpPlayerId) : base(id)
         {
             infoSet = new InformationSet(id, initialHand, trumpCard, trumpPlayerId);
         }
@@ -18,21 +17,6 @@ namespace SuecaSolver
             infoSet.AddPlay(playerID, card);
         }
 
-        override public int Play()
-        {
-            int chosenCard;
-
-            if (infoSet.GetHandSize() > 10)
-            {
-                chosenCard = infoSet.RuleBasedDecision();
-            }
-            else
-            {
-                chosenCard = PIMC.Execute(_id, infoSet, 1, new List<int> { 10, 10, 10, 10, 10, 10, 10, 10, 10, 10 }, new List<int> { 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000, 1000 });
-            }
-
-            return chosenCard;
-        }
 
         public int[] GetWinnerAndPointsAndTrickNumber()
         {
@@ -64,34 +48,19 @@ namespace SuecaSolver
             return infoSet.HasNewTrickTeamWinner();
         }
 
-
-
         public int GetTrickIncrease()
-
         {
-
             return infoSet.GetTrickIncrease();
-
         }
-
-
-
+        
         public float PointsPercentage()
-
         {
-
             float alreadyMadePoints = infoSet.MyTeamPoints + infoSet.OtherTeamPoints;
-
             if (alreadyMadePoints == 0.0f)
-
             {
-
                 return 0.5f;
-
             }
-
             return infoSet.MyTeamPoints / alreadyMadePoints;
-
         }
 
         public int GetHandSize()
@@ -101,7 +70,7 @@ namespace SuecaSolver
 
         public string GetLastPlayInfo()
         {
-           return infoSet.GetLastPlayInfo();
+            return infoSet.GetLastPlayInfo();
         }
 
         public bool IsLastPlayOfTrick()
@@ -109,10 +78,12 @@ namespace SuecaSolver
             return infoSet.IsLastPlayOfTrick();
         }
 
+
         public int GetNextPlayerId()
         {
             return infoSet.GetNextPlayerId();
         }
+
 
         //attribute the event to the winner when he is from my team and blame himself or the partner when winner is an opponent
         public int GetResposibleForLastTrick()

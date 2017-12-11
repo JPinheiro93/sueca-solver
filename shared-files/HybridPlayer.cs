@@ -5,7 +5,7 @@ namespace SuecaSolver
 {
     public class HybridPlayer : ArtificialPlayer
     {
-        private InformationSet infoSet;
+        protected InformationSet infoSet;
 
         public HybridPlayer(int id, List<int> initialHand, int trumpCard, int trumpPlayerId)
             : base(id)
@@ -70,6 +70,15 @@ namespace SuecaSolver
             return infoSet.IsLastPlayOfTrick();
         }
 
+        public int GetNextPlayerId()
+        {
+            return infoSet.GetNextPlayerId();
+        }
+
+        public int GetZeroSumTrickScore()
+        {
+            return infoSet.GetZeroSumTrickScore();
+        }
 
         //attribute the event to the winner when he is from my team and blame himself or the partner when winner is an opponent
         public int GetResposibleForLastTrick()

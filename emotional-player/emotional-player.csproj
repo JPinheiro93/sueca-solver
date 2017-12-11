@@ -26,6 +26,7 @@
     <IsWebBootstrapper>false</IsWebBootstrapper>
     <UseApplicationTrust>false</UseApplicationTrust>
     <BootstrapperEnabled>true</BootstrapperEnabled>
+    <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -66,9 +67,11 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\fatimalibs\Conditions.dll</HintPath>
     </Reference>
-    <Reference Include="EmoteEvents, Version=1.0.6243.26124, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\SERA\Binaries\Skene\EmoteEvents.dll</HintPath>
+    <Reference Include="CookComputing.XmlRpcV2">
+      <HintPath>..\..\Thalamus\CookComputing.XmlRpcV2.dll</HintPath>
+    </Reference>
+    <Reference Include="EmoteEvents">
+      <HintPath>..\..\..\..\Desktop\Sueca\Skene1\EmoteEvents.dll</HintPath>
     </Reference>
     <Reference Include="EmotionalAppraisal, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -109,13 +112,11 @@
       <SpecificVersion>False</SpecificVersion>
       <HintPath>..\fatimalibs\SocialImportanceAsset.dll</HintPath>
     </Reference>
-    <Reference Include="SuecaMessages, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\sueca-messages\SuecaMessages\bin\Debug\SuecaMessages.dll</HintPath>
+    <Reference Include="SuecaMessages">
+      <HintPath>..\..\..\..\Desktop\Sueca\sueca-messages\SuecaMessages\bin\Debug\SuecaMessages.dll</HintPath>
     </Reference>
-    <Reference Include="SuecaTypes, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\sueca-messages\SuecaTypes\bin\Debug\SuecaTypes.dll</HintPath>
+    <Reference Include="SuecaTypes">
+      <HintPath>..\..\..\..\Desktop\Sueca\sueca-messages\SuecaTypes\bin\Debug\SuecaTypes.dll</HintPath>
     </Reference>
     <Reference Include="System" />
     <Reference Include="System.Core" />
@@ -124,9 +125,8 @@
     <Reference Include="Microsoft.CSharp" />
     <Reference Include="System.Data" />
     <Reference Include="System.Xml" />
-    <Reference Include="Thalamus, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
-      <SpecificVersion>False</SpecificVersion>
-      <HintPath>..\..\SERA\Binaries\Thalamus\Thalamus.dll</HintPath>
+    <Reference Include="Thalamus">
+      <HintPath>..\..\..\..\Desktop\Sueca\Thalamus\Thalamus.dll</HintPath>
     </Reference>
     <Reference Include="Utilities, Version=1.0.0.0, Culture=neutral, processorArchitecture=MSIL">
       <SpecificVersion>False</SpecificVersion>
@@ -150,12 +150,6 @@
     <None Include="App.config" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\shared-files\shared-files.csproj">
-      <Project>{240850d4-363b-4f58-8fce-e51554b698c5}</Project>
-      <Name>shared-files</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
     <BootstrapperPackage Include=".NETFramework,Version=v4.5">
       <Visible>False</Visible>
       <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
@@ -169,6 +163,12 @@
   </ItemGroup>
   <ItemGroup>
     <WCFMetadata Include="Service References\" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\shared-files\shared-files.csproj">
+      <Project>{240850d4-363b-4f58-8fce-e51554b698c5}</Project>
+      <Name>shared-files</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

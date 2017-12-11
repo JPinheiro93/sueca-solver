@@ -17,13 +17,13 @@ namespace EmotionalPlayer
     {
         private struct Utterance
         {
-            public string text { get; set; }
-            public int uses { get; set; }
+            public string Text { get; set; }
+            public int Uses { get; set; }
 
             public Utterance(string utterance, int repetitions)
             {
-                text = utterance;
-                uses = repetitions;
+                Text = utterance;
+                Uses = repetitions;
             }
         }
 
@@ -48,14 +48,14 @@ namespace EmotionalPlayer
             AssetManager.Instance.Bridge = new AssetManagerBridge();
             _iat = IntegratedAuthoringToolAsset.LoadFromFile(scenarioPath);
             eventsLock = new Object();
-            loadScenario(agentType);
+            LoadScenario(agentType);
             usedUtterances = new List<Utterance>();
             Task.Run(() => { UpdateCoroutine(); });
         }
 
 
 
-        private void loadScenario(string agentType)
+        private void LoadScenario(string agentType)
         {
             System.IO.Directory.CreateDirectory(LOGS_PATH);
 
@@ -74,13 +74,13 @@ namespace EmotionalPlayer
         }
 
 
-        private void saveToFile()
+        private void SaveToFile()
         {
             _rpc.SaveToFile(LOGS_PATH + "/" + _agentName + "log" + i + ".rpc");
             i++;
         }
 
-        private void showEmotions()
+        private void ShowEmotions()
         {
             string emotions = "";
             foreach (var emotion in _rpc.GetAllActiveEmotions())
@@ -128,7 +128,7 @@ namespace EmotionalPlayer
                         _rpc.ResetEmotionalState();
                     }
 
-                    perceive(ev);
+                    Perceive(ev);
 
                     if (ev.Name == Consts.STATE_NEXT_PLAYER)
                     {
@@ -145,14 +145,14 @@ namespace EmotionalPlayer
                             waitForDeciding.Start();
                             while (!_sleepNotify && _events.Count == 0)
                             {
-
+                                
                             }
                             waitForDeciding.Interrupt();
                             _sleepNotify = false;
                             if (_events.Count == 0)
                             {
                                 //decide only if after sleeping no one has played
-                                decide(ev);
+                                Decide(ev);
                             }
                         }
                     }
@@ -162,7 +162,7 @@ namespace EmotionalPlayer
                         if (ev.OtherStringInfos.Length > 0)
                         {
                             Thread.Sleep(1000);
-                            decide(ev);
+                            Decide(ev);
                             Thread.Sleep(1000);
                             EmotionalSuecaPlayer.SuecaPub.Play(ev.OtherIntInfos[0], ev.OtherStringInfos[0], ev.OtherStringInfos[1]);
                         }
@@ -170,29 +170,29 @@ namespace EmotionalPlayer
                     else if (ev.Name == Consts.STATE_PLAYPARTNER)
                     {
                         Thread.Sleep(1000);
-                        decide(ev);
+                        Decide(ev);
 
                         if (ev.OtherIntInfos[0] == ((_esp._id + 2) % 4))
                         {
-                            string attributionEmotion = getStrongestAttributionEmotion(_rpc.GetAllActiveEmotions());
+                            string attributionEmotion = GetStrongestAttributionEmotion(_rpc.GetAllActiveEmotions());
                             EmotionalSuecaPlayer.SuecaPub.SetPosture("", attributionEmotion);
                         }
                         else
                         {
-                            string wellbeingEmotion = getStrongestWellbeingEmotion(_rpc.GetAllActiveEmotions());
+                            string wellbeingEmotion = GetStrongestWellbeingEmotion(_rpc.GetAllActiveEmotions());
                             EmotionalSuecaPlayer.SuecaPub.SetPosture("", wellbeingEmotion);
                         }
                     }
                     else if (ev.Name != Consts.INIT)
                     {
-                        decide(ev);
+                        Decide(ev);
                     }
                 }
                 Thread.Sleep(100);
             }
         }
 
-        private string getStrongestAttributionEmotion(IEnumerable<EmotionDTO> activeEmotions)
+        private string GetStrongestAttributionEmotion(IEnumerable<EmotionDTO> activeEmotions)
         {
             float intensity = 0;
             string strongestEmotion = "";
@@ -210,7 +210,7 @@ namespace EmotionalPlayer
             return strongestEmotion;
         }
 
-        private string getStrongestWellbeingEmotion(IEnumerable<EmotionDTO> activeEmotions)
+        private string GetStrongestWellbeingEmotion(IEnumerable<EmotionDTO> activeEmotions)
         {
             float intensity = 0;
             string strongestEmotion = "";
@@ -249,7 +249,7 @@ namespace EmotionalPlayer
             }
         }
 
-        private void perceive(SuecaEvent ev)
+        private void Perceive(SuecaEvent ev)
         {
             //DEBUG
             Console.WriteLine(_agentName + "---" + "Going to perceive event " + ev.Name);
@@ -257,12 +257,14 @@ namespace EmotionalPlayer
             {
                 Console.WriteLine(_agentName + "---" + el.ToString());
             }
-            _rpc.Perceive(ev.Events);
+
+                _rpc.Perceive(ev.Events);
+
         }
 
-        private void decide(SuecaEvent ev)
+        private void Decide(SuecaEvent ev)
         {
-            Console.WriteLine(_agentName + "---" + "DECING FOR EVENT: " + ev.Name);
+            Console.WriteLine(_agentName + "---" + "DECIDING FOR EVENT: " + ev.Name);
             string[] tags = ev.Tags.ToArray();
             string[] meanings = ev.Meanings.ToArray();
 
@@ -273,13 +275,13 @@ namespace EmotionalPlayer
                 if (possibleActions == null || possibleActions.IsEmpty())
                 {
                     Console.WriteLine(_agentName + "---" + "No action");
-                    saveToFile();
+                    SaveToFile();
                     return;
                 }
                 else
                 {
                     ActionLibrary.IAction chosenAction = possibleActions.FirstOrDefault();
-                    saveToFile();
+                    SaveToFile();
 
                     switch (chosenAction.Key.ToString())
                     {
@@ -290,7 +292,7 @@ namespace EmotionalPlayer
                             Name meaning = chosenAction.Parameters[2];
                             Name style = chosenAction.Parameters[3];
                             var possibleDialogs = _iat.GetDialogueActions(currentState, nextState, meaning, style);
-                            var dialog = getUtterance(possibleDialogs);
+                            var dialog = GetUtterance(possibleDialogs);
 
                             Console.WriteLine(_agentName + "---" + dialog);
                             EmotionalSuecaPlayer.SuecaPub.StartedUtterance(_esp._id, ev.Name, "");
@@ -338,13 +340,13 @@ namespace EmotionalPlayer
         /// </summary>
         /// <param name="dialogs">List of possible dialogues</param>
         /// <returns>An unused dialogue or, alternatively, a least used dialogue</returns>
-        private string getUtterance(List<DialogueStateActionDTO> dialogs)
+        private string GetUtterance(List<DialogueStateActionDTO> dialogs)
         {
             List<Utterance> candidates = new List<Utterance>();
 
             foreach (DialogueStateActionDTO dialog in dialogs)
             {
-                int i = usedUtterances.FindIndex(o => string.Equals(dialog.Utterance, o.text, StringComparison.OrdinalIgnoreCase));
+                int i = usedUtterances.FindIndex(o => string.Equals(dialog.Utterance, o.Text, StringComparison.OrdinalIgnoreCase));
 
                 if (i == -1)
                 {
@@ -360,21 +362,21 @@ namespace EmotionalPlayer
                 }
             }
 
-            int min = candidates.Min(x => x.uses);
-            var result = candidates.Where(t => t.uses == min).Shuffle().FirstOrDefault();
-            int j = usedUtterances.FindIndex(o => string.Equals(result.text, o.text, StringComparison.OrdinalIgnoreCase));
+            int min = candidates.Min(x => x.Uses);
+            var result = candidates.Where(t => t.Uses == min).Shuffle().FirstOrDefault();
+            int j = usedUtterances.FindIndex(o => string.Equals(result.Text, o.Text, StringComparison.OrdinalIgnoreCase));
 
             if (j == -1)
             {
-                usedUtterances.Add(new Utterance(result.text, ++result.uses));
+                usedUtterances.Add(new Utterance(result.Text, ++result.Uses));
             }
             else if (j >= -1)
             {
                 usedUtterances.RemoveAt(j);
-                usedUtterances.Add(new Utterance(result.text, ++result.uses));
+                usedUtterances.Add(new Utterance(result.Text, ++result.Uses));
             }
 
-            return result.text;
+            return result.Text;
         }
     }
 }
