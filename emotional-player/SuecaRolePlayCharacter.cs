@@ -145,7 +145,7 @@ namespace EmotionalPlayer
                             waitForDeciding.Start();
                             while (!_sleepNotify && _events.Count == 0)
                             {
-
+                                
                             }
                             waitForDeciding.Interrupt();
                             _sleepNotify = false;
@@ -257,12 +257,14 @@ namespace EmotionalPlayer
             {
                 Console.WriteLine(_agentName + "---" + el.ToString());
             }
-            _rpc.Perceive(ev.Events);
+
+                _rpc.Perceive(ev.Events);
+
         }
 
         private void Decide(SuecaEvent ev)
         {
-            Console.WriteLine(_agentName + "---" + "DECING FOR EVENT: " + ev.Name);
+            Console.WriteLine(_agentName + "---" + "DECIDING FOR EVENT: " + ev.Name);
             string[] tags = ev.Tags.ToArray();
             string[] meanings = ev.Meanings.ToArray();
 

@@ -54,12 +54,12 @@
 					"Priority": 4
 				}, 
 				{
-					"Action": "Speak(TrickEnd, [ns], [m], [e])",
+					"Action": "Speak(TrickEnd, [ns], [m], S([e], [ds]))",
 					"Target": "Board",
 					"Type": "Board",
 					"Conditions":
 						{
-							"Set": ["Dialogue(Floor) = My(Id)", "DialogueState(Board) = TrickEnd", "ValidDialogue(TrickEnd, [ns], [m], [e]) = True", "COL = [m]", "StrongestEmotion(SELF) = [e]"]
+							"Set": ["Dialogue(Floor) = My(Id)", "DialogueState(Board) = TrickEnd", "ValidDialogue(TrickEnd, [ns], [m], S([e], [ds])) = True", "COL = [m]", "StrongestEmotion(SELF) = [e]", "Dialogue(Style) = [ds]"]
 						},
 					"Priority": 3
 				}, 
@@ -84,24 +84,34 @@
 					"Priority": 5
 				}, 
 				{
-					"Action": "Speak(PlaySelf, [ns], [m], [e])",
+					"Action": "Speak(PlaySelf, [ns], [m], S([e], [ds]))",
 					"Target": "Board",
 					"Type": "Board",
 					"Conditions":
 						{
-							"Set": ["DialogueState(Board) = PlaySelf", "ValidDialogue(PlaySelf, [ns], [m], [e]) = True", "COL = [m]", "StrongestEmotion(SELF) = [e]"]
+							"Set": ["DialogueState(Board) = PlaySelf", "Dialogue(Floor) = My(Id)", "ValidDialogue(PlaySelf, [ns], [m], S([e], [ds])) = True", "COL = [m]", "StrongestEmotion(SELF) = [e]", "Dialogue(Style) = [ds]"]
 						},
 					"Priority": 9
 				}, 
 				{
-					"Action": "Speak(PlayPartner, [ns], [m], [e])",
+					"Action": "Speak(PlayPartner, [ns], [m], S([e], [ds]))",
 					"Target": "Board",
 					"Type": "Board",
 					"Conditions":
 						{
-							"Set": ["DialogueState(Board) = PlayPartner", "ValidDialogue(PlayPartner, [ns], [m], [e]) = True", "Current(PlayerID) = [cpID]", "Player([cpID]) = Partner", "COL = [m]", "StrongestEmotion(SELF) = [e]"]
+							"Set": ["DialogueState(Board) = PlayPartner", "Dialogue(Floor) = My(Id)", "ValidDialogue(PlayPartner, [ns], [m], S([e], [ds])) = True", "Current(PlayerID) = [cpID]", "Player([cpID]) = Partner", "COL = [m]", "StrongestEmotion(SELF) = [e]", "Dialogue(Style) = [ds]"]
 						},
 					"Priority": 9
+				}, 
+				{
+					"Action": "Speak(PlayOpponent, [ns], [m], S([e], [ds]))",
+					"Target": "Board",
+					"Type": "Board",
+					"Conditions":
+						{
+							"Set": ["DialogueState(Board) = PlayPartner", "Dialogue(Floor) = My(Id)", "ValidDialogue(PlayOpponent, [ns], [m], S([e], [ds])) = True", "Current(PlayerID) = [cpID]", "Player([cpID]) = Opponent", "COL = [m]", "StrongestEmotion(SELF) = [e]", "Dialogue(Style) = [ds]"]
+						},
+					"Priority": 7
 				}]
 		},
 	"types": [
