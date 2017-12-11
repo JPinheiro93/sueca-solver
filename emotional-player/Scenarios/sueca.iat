@@ -7,460 +7,76 @@
 			"CharacterSources": ["group.rpc", "individual.rpc"],
 			"Dialogues": [
 				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Shame, LW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(sadness3)> Acho que este não foi o nosso melhor momento em equipa, mas melhores momentos se seguirão com certeza <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-C47F127E936E9188A9E44A0160596512"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Shame, LW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(sadness3)> Nós não estivémos lá muito bem desta vez. <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-DB19DE16A07380CB27425FC6891E26A8"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Shame, LW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(sadness3)> éh pá; má jogada da nossa parte, para a próxima já sabemos... <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-912480DB107EA7B179C62E56F57C6E4B"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Shame, HW)",
-					"Utterance": "<gaze(player|playerID|)> Colega, <animate(sadness3)> Desculpa ésta jogada vergonhosa para a nossa equipa. <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-3EE191F57F0E3F16F599C88B1BF41FBD"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Shame, HW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(sadness3)> Só tinha ésta para jogar, desculpa colega. <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-D75CA38954A02D9F4B48F7B5CCE8E2E8"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Shame, HW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(sadness3)> Não nos quero envergonhar, mas éra o que eu tinha. <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-D032ABF847AF6875FB974E17D75A593D"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, LW)",
-					"Utterance": "<gaze(player|playerID|)>  Muito <animate(joy1)> bem colega, estou a gostar da nossa prestação <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-8F132DB44D2E3FA4C9AAC30773A96007"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, LW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(joy1)> estou impressionado com nosco <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-7A4A2F6BAFEA063336D8A4D6FB5B45BC"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, LW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(joy1)> Nós temos de continuar assim; <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-208CFD47B6DE1D9E10007F5849408647"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, LW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(joy1)> Acredito na nossa equipa. <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-D37BC895ABEFC9E51BDA515FB11EA1C1"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, LW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(joy1)> Mais uma cartinha rumo à vitória <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-147EF0B242215A5ADF0E690B40D03824"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, LW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Estou a gostar muito, és um bom colega de equipa <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-758ED002F58B8DA1597628B24E6BC66D"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, LW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(joy2)>Acho que estamos a conseguir fazer um bom jogo colega <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-DE54A0DF9568CA345C413F1BD7D0E442"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, HW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(joy4)> espétaculár. <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-84A93554B86047C33ACCAF6BA91044D7"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, HW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> A jogar assim, de certeza que vamos conseguir bons resultados! <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-A9E40CF0FE295B6F7E920AB585C12EA3"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, HW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(joy4)> Nós estamos a ir muito bem camarada. Se continuarmos assim, tenho confiança que vamos ser recompensados <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-64F46C214C6CA665C7472B009B43B9DD"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, HW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Aiii caramba, estamos imparáveis amigo!! <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-0AFFAFE03732A32DB6E1B55A00F2F690"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, HW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(joy4)> Bolas, estou mesmo orgulhoso de ti parceiro. <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-B27C9156D5DF34C1F073E9D416479968"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, HW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(joy5)> Nós  estamos a arrasar nesta ronda,! <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-3B6E4B63037906B247979E189234EE2D"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, HW)",
-					"Utterance": "<gaze(player|playerID|)> <animate(joy4)> Nós jogamos mesmo muito bem, colega. Quem diria que nos dariamos tão bem? <gaze(player|nextPlayerID|)>",
-					"UtteranceId": "TTS-9C05A7E4F650291E3BE2479D9DD2F6D7"
-				}, 
-				{
-					"CurrentState": "PlayPartner",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Shame, LW)",
-					"Utterance": "Parceiro Shame Baixo",
-					"UtteranceId": "TTS-96D92375CCCB550F1A2983B314208A62"
-				}, 
-				{
-					"CurrentState": "PlayPartner",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Shame, HW)",
-					"Utterance": "Parceiro Shame Alto",
-					"UtteranceId": "TTS-76AC8E0FE7D98590699CB5EFF10669E7"
-				}, 
-				{
-					"CurrentState": "PlayPartner",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, LW)",
-					"Utterance": "Parceiro Orgulho Baixo",
-					"UtteranceId": "TTS-55FB8B58EDFE073F2189D3DE6B6CF2B1"
-				}, 
-				{
-					"CurrentState": "PlayPartner",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Pride, HW)",
-					"Utterance": "Parceiro Orgulho Alto",
-					"UtteranceId": "TTS-FAE1F461CD2D41C2E9AD583BD22027AB"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Distress, HW)",
-					"Utterance": "<gaze(player|playerID|)> Bora companheiro, está na tua vez.",
-					"UtteranceId": "TTS-A7BE8FDC9A407A76390C67A28345AE80"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Distress, HW)",
-					"Utterance": "<gaze(player|playerID|)> És tu amigo!",
-					"UtteranceId": "TTS-1BF1185F669A482162176EAA3A271802"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Distress, HW)",
-					"Utterance": "<gaze(player|playerID|)> Parceiro, és tu a jogar. Independentemente do que jogues, eu já tenho muito orgulho de estar na tua equipa.",
-					"UtteranceId": "TTS-0B100B49D1503B45C1A71D4D69894627"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Distress, HW)",
-					"Utterance": "<gaze(player|playerID|)> Não tenhas medo de jogar, eu vou gostar de jogar contigo de qualquer maneira",
-					"UtteranceId": "TTS-A7E759A6C0232206DAF277A83FF7C3C6"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Distress, HW)",
-					"Utterance": "<gaze(player|playerID|)> Podes jogar parceiro!",
-					"UtteranceId": "TTS-C3635C4320EFC9267E27683DA50964FF"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Distress, HW)",
-					"Utterance": "<gaze(player|playerID|)> És tu agora, amigo",
-					"UtteranceId": "TTS-551F8B2BA07BBEF657508D055CE361AF"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Distress, HW)",
-					"Utterance": "<gaze(player|playerID|)> Colega, está na tua vez! Tu consegues, bora lá!",
-					"UtteranceId": "TTS-CA8A81BBA13904A22536EB9118EF95B9"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Distress, HW)",
-					"Utterance": "<gaze(player|playerID|)> Parceiro, é a tua vez! De certeza que vais jogar bem.",
-					"UtteranceId": "TTS-46769D7659BA8124626B32F8B9155B27"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Distress, HW)",
-					"Utterance": "<gaze(player|playerID|)> És tu colega, confio em ti.",
-					"UtteranceId": "TTS-8753475CBB26E4BC050D90DC465CC1ED"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Joy, HW)",
-					"Utterance": "<gaze(player|playerID|)> Tenho aprendido bastante com a tua maneira de jogar, colega. ",
-					"UtteranceId": "TTS-B1912ED5B08517AEADB783EA48C7E9C7"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Joy, HW)",
-					"Utterance": "<gaze(player|playerID|)> Que bom jogar contigo. É a tua vez amigo.",
-					"UtteranceId": "TTS-C27676F25A723C420CC5721A83C83BD5"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Joy, HW)",
-					"Utterance": "<gaze(player|playerID|)> És um parceiro de sueca fantástico, colega",
-					"UtteranceId": "TTS-DD3B1F150F26A9FCFAE8836DF383DC2B"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Joy, HW)",
-					"Utterance": "<gaze(player|playerID|)> Parceiro, não te esquecas que é a tua vez de jogar",
-					"UtteranceId": "TTS-AF1782D255E82907B521820D584540A0"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Joy, HW)",
-					"Utterance": "<gaze(player|playerID|)> colega da sueca, mostra-nos como se faz",
-					"UtteranceId": "TTS-B69D04072C0CBB63FBB5EB2CB6C3342F"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Joy, HW)",
-					"Utterance": "<gaze(player|playerID|)> És tu amigo!",
-					"UtteranceId": "TTS-1BF1185F669A482162176EAA3A271802"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Joy, HW)",
-					"Utterance": "<gaze(player|playerID|)> Bora lá colega, é só continuar a jogar como tens jogado",
-					"UtteranceId": "TTS-22492C3E834D17AF8CB163B66E7C9C30"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Joy, HW)",
-					"Utterance": "<gaze(player|playerID|)> Como uma equipa como a nossa, a diversão é garantida",
-					"UtteranceId": "TTS-B8365A29B8469D2B16D0CD061F2AAD49"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Joy, HW)",
-					"Utterance": "<gaze(player|playerID|)> Nada a temer companheiro, nós os dois juntos de certeza que vamos triunfar",
-					"UtteranceId": "TTS-A8CB27A11E09A2C1AC146BD0E744C89D"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Joy, HW)",
-					"Utterance": "<gaze(player|playerID|)> Bora lá amigo, isto está mesmo a correr bem para a nossa equipa",
-					"UtteranceId": "TTS-CC3546DA148B906509A229995156DA0D"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Joy, HW)",
-					"Utterance": "<gaze(player|playerID|)> Joga parceiro, este jogo está a ser algo de fantástico",
-					"UtteranceId": "TTS-3E7AFD27B6F25AA43F4ED5996C458DF4"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
+					"CurrentState": "PlayOpponent",
 					"NextState": "Dynamic",
 					"Meaning": "COL",
 					"Style": "S(Joy, LW)",
-					"Utterance": "<gaze(player|playerID|)> Comigo na tua equipa, não tens nada a perder",
-					"UtteranceId": "TTS-E37A58A66F7CF4200F4EBBB819B69278"
+					"Utterance": "<gaze(player|nextPlayerId|)> assim joga uma boa equipa de sueca",
+					"UtteranceId": "TTS-F5A6F0D2348F8352F15D559D3A0F22E6"
 				}, 
 				{
-					"CurrentState": "PlaySelf",
+					"CurrentState": "PlayOpponent",
 					"NextState": "Dynamic",
 					"Meaning": "COL",
-					"Style": "S(Joy, LW)",
-					"Utterance": "<gaze(player|playerID|)> Não te preocupes parceiro, eu jogo sempre bem",
-					"UtteranceId": "TTS-013A60F1A347812269747CF0F0442402"
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Assim é que se joga colega. Ainda bem que estás na minha equipa",
+					"UtteranceId": "TTS-F26D7DCA04AF65930641BF97D2B244DD"
 				}, 
 				{
-					"CurrentState": "PlaySelf",
+					"CurrentState": "PlayOpponent",
 					"NextState": "Dynamic",
 					"Meaning": "COL",
-					"Style": "S(Distress, LW)",
-					"Utterance": "<gaze(player|playerID|)> Não estou a gostar mesmo nada disto, mau maria",
-					"UtteranceId": "TTS-A8876B25A1FBD2C45C781D040B994D85"
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Grande jogada, sim senhor",
+					"UtteranceId": "TTS-E59AD29C8AA57C80F1874A2DE48270EA"
 				}, 
 				{
-					"CurrentState": "PlaySelf",
+					"CurrentState": "PlayOpponent",
 					"NextState": "Dynamic",
 					"Meaning": "COL",
-					"Style": "S(Distress, LW)",
-					"Utterance": "<gaze(player|playerID|)> Alguém tem que fazer alguma coisa, se não não dá",
-					"UtteranceId": "TTS-CDF65A47CBF7CBE343982F65B9136FBB"
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Boa colega",
+					"UtteranceId": "TTS-0884C3B86306E5F8D220FB4F97786420"
 				}, 
 				{
-					"CurrentState": "PlaySelf",
+					"CurrentState": "PlayOpponent",
 					"NextState": "Dynamic",
 					"Meaning": "COL",
-					"Style": "S(Distress, LW)",
-					"Utterance": "<gaze(player|playerID|)> Isto está a correr mal para o nosso lado, não pode ser",
-					"UtteranceId": "TTS-4271BF95960F00A82DF1ABA73120F0C1"
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Eh lá... Onde aprendeste a jogar tão bem?",
+					"UtteranceId": "TTS-D3797FBC3CCE8E8E8ED0E7C4FFACFBA5"
 				}, 
 				{
-					"CurrentState": "PlaySelf",
+					"CurrentState": "PlayOpponent",
 					"NextState": "Dynamic",
 					"Meaning": "COL",
-					"Style": "S(Distress, LW)",
-					"Utterance": "<gaze(player|playerID|)> Aprendam comigo que eu não duro para sempre",
-					"UtteranceId": "TTS-3A41BA30D8CFD4AC20E845678B398B7C"
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> O meu parceiro nunca me desilude",
+					"UtteranceId": "TTS-E74057B465248A8CA828B8C53D7E4CCD"
 				}, 
 				{
-					"CurrentState": "PlaySelf",
+					"CurrentState": "PlayOpponent",
 					"NextState": "Dynamic",
 					"Meaning": "COL",
-					"Style": "S(Distress, LW)",
-					"Utterance": "<gaze(player|playerID|)> Prestem atenção a esta jogada",
-					"UtteranceId": "TTS-388F485C885DF785CA51931C2A3CCBD5"
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Uáu, boa jogada. Estou sempre a aprender com a tua forma de jogar companheiro",
+					"UtteranceId": "TTS-0D142704CB9276352AD521CD0F084066"
 				}, 
 				{
-					"CurrentState": "PlaySelf",
+					"CurrentState": "PlayOpponent",
 					"NextState": "Dynamic",
 					"Meaning": "COL",
-					"Style": "S(Distress, LW)",
-					"Utterance": "<gaze(player|playerID|)> É a minha vez de arrasar",
-					"UtteranceId": "TTS-3246612432F499FF21E468D50E725913"
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> És um verdadeiro profissional da sueca",
+					"UtteranceId": "TTS-CA7B4F1EB0CE1ECDB172503F569AE39D"
 				}, 
 				{
-					"CurrentState": "PlaySelf",
+					"CurrentState": "PlayOpponent",
 					"NextState": "Dynamic",
 					"Meaning": "COL",
-					"Style": "S(Distress, LW)",
-					"Utterance": "<gaze(player|playerID|)> Ora agora sou eu, não é?",
-					"UtteranceId": "TTS-EB05B1CC7A1974F5740473088526934A"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Distress, LW)",
-					"Utterance": "<gaze(player|playerID|)> Com a minha próxima jogada vou fazer magia",
-					"UtteranceId": "TTS-B3206D64D7463E9C668658B94B97A30D"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Distress, LW)",
-					"Utterance": "<gaze(player|playerID|)> Tenho de pensar bem esta jogada",
-					"UtteranceId": "TTS-0CE7D3BA47F84858CFCAD88BDF97EA05"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Distress, LW)",
-					"Utterance": "<gaze(player|playerID|)> Bem, como sempre vou ter que ser eu a dar a volta ao jogo",
-					"UtteranceId": "TTS-14A1D4D8E3873DC180824323533AB6BA"
-				}, 
-				{
-					"CurrentState": "PlaySelf",
-					"NextState": "Dynamic",
-					"Meaning": "COL",
-					"Style": "S(Distress, LW)",
-					"Utterance": "<gaze(player|playerID|)> Deixa-me cá ver o que eu vou jogar",
-					"UtteranceId": "TTS-9D9E82ECC90DDD17EEBE12D0694CC2CA"
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Boa amigo! Que orgulhoso que estou de ti",
+					"UtteranceId": "TTS-2270004CC57C7703F11E4BA25E3AAB43"
 				}, 
 				{
 					"CurrentState": "NextPlayer",
@@ -861,6 +477,134 @@
 					"Style": "S(Distress, LW)",
 					"Utterance": "<gaze(player|playerID|)> <animate(sadness3)> Bem, algo tem de mudar na estratégia da nossa equipa porque assim não estou a gostar<gaze(player|nextPlayerID|)>",
 					"UtteranceId": "TTS-DCEC7EC2560B862A9EE552543A963873"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)> Concentração,  fazer uma boa jogada não chega, tens de fazer um bom jogo<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-860C459516C4A50146692C0195436832"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy1)> Esta jogada foi boa, é melhor que continues assim <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-28A60247AEA84355752C15C2967D5830"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Estamos no bom caminho, vê lá se não estragas tudo <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-19F135E28D854D034D534C52696F6A7F"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)> Agora não me desiludiste, boa!<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-D6E1CA9BF43F47BF63BED82E65DBDF39"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy1)> Se soubesse que jogavas assim, não tinha querido jogar contigo <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-38F8B4ABBA50F68A8084F1C9F19180A0"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Vê se jogas melhor, o meu objetivo não é só  ganhar, é levar todos os pontos<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-2119492AC063279944B442FA50FAE069"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)> Temos uma estratégia vencedora, é bom que não te desvies dela <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-A99C4AB84B6F16A0F8772BDB3048A4F5"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy1)> Eh lá, estamos a fazer um jogo mesmo bom <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-74078A63247F24A9154A52A9F4E13D87"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness5)> Eu não vim aqui para perder, é bom que comeces a jogar melhor <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-621E0FE667E6099127607BF9EE835930"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness4)> Estamos em maus lençóis, toca a prestar mais atenção ao jogo <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-C10FF496BA7CC5021AD4BDAE15B3EFE8"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness4)> Mas isto é o melhor que consegues fazer?. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-9C5FE351F64994871AF4F784AC614FF7"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness5)> Que vergonha este jogo! É melhor que mudes de estratégia, se não estamos perdidos <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-6AA74569EAB045C2B351B6DEA4C452FB"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness4)> Isto não está a correr nada bem para o nosso lado, vê lá se te aplicas <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-9AA8E7C1ACB11FF97E35443FFE7E60AC"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness4)>Se  continuarmos a jogar assim é que não vamos a lado nenhum <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-D7F2832B3A60F8E5016FF6792E6AFDE5"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness5)> Estamos a fazer um jogo muito fraco, vê lá se tomas mais atenção <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-1F9E14465122BC436A8DCDF1E029DE89"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness4)> Acho que vou trocar de equipa se continuares a jogar assim <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-1376C2D771EDD2DB9EC5CD630FC275E7"
 				}, 
 				{
 					"CurrentState": "GameEnd",
@@ -1269,6 +1013,70 @@
 					"Style": "S(Distress, HW)",
 					"Utterance": "<gaze(player|playerID|)> <animate(sadness2)>Oh, não estou a gostar que isto nos esteja a correr mal amigo.  <gaze(player|nextPlayerID|)>",
 					"UtteranceId": "TTS-4B69367341414756325161FABAE8B608"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy4)> Boa colega, a minha confiança em ti é merecida <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-F4FFDAAC9742C57FD0755CB4F87E5D98"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Uáu, sempre a fazer jogadas brilhantes<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-656185C44FA56C46AC33B1D6A4BBF9D9"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy5)> Quem me dera jogar tão bem quanto tu, parceiro <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-A9B5824D92C8A61C6294A05521974FC2"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy4)>  Nunca me desiludiste até agora, és mesmo um bom parceiro! <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-0CC8A6CDF747527151FB96E69B681691"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Confio em ti  companheiro das cartas <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-F915E37940832B88C2E51599EBAAA1E1"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy5)> Que orgulho em te ter na minha equipa <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-C86D01E2A65CD695718B35348EF4B2C2"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy4)>  Independentemente do jogo nos correr bem ou mal, vou sempre gostar de te ter na minha equipa <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-E991C52E3BD38E92632547AE40475A4C"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Boa parceiro, tens a minha confiança absoluta<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-04E8EF0F7F1C9741C869A04B3F774C56"
 				}, 
 				{
 					"CurrentState": "GameEnd",
@@ -1741,6 +1549,70 @@
 					"Style": "S(Distress, HW)",
 					"Utterance": "<gaze(player|playerID|)> Terminou o jogo <animate(sadness3)> Desta vez não conseguimos ganhar, mas de certeza que, para a próxima faremos melhor",
 					"UtteranceId": "TTS-EE04ED3193070A73AAC6AFD3D73919A1"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)><animate(sadness2)> Espero que confies em mim tanto quanto eu confio em ti, ainda vamos ser capazes de dar a volta <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-50BD5E8292B4D7B4D7CEF69B62749146"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> Isto está dificil <animate(sadness2)>Mas  Tenho sempre confiança na nossa equipa <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-B9EF8ABF4B768ADC08F23B784534C68F"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness2)> Espero que possamos voltar a jogar mais vezes no futuro, isso seria bom não seria amigo? <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-886A853DC6362BAF96C48933D84E0795"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)><animate(sadness2)> Os nossos oponentes estão à altura, colega. É bom quando o jogo é renhido, não é? Mas eu confio no nosso potencial<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-C516290918655C05386E7AB38513623F"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> Isto <animate(sadness2)> O importante não é ganhar, o importante é fazer amizades <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-D9B3D91D4E224F0A0FCF3863BA267C6A"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness2)> Eu estou muito feliz por estar a jogar contigo, mesmo que estejamos a perder  <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-F844A353DD0C4A226118864A9A6518C4"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)><animate(sadness2)> Bora lá amigo, ainda conseguimos dar a volta a esta situação dificil <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-92B39E45DBE1D3344C7979F55CDD7C18"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> Estamos em maus lençóis amigo <animate(sadness2)> Sei que conseguimos fazer melhor <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-BE0DF9F1C239B288E7D0A5705FBA42F1"
 				}, 
 				{
 					"CurrentState": "NextPlayer",
@@ -2491,32 +2363,96 @@
 					"NextState": "Dynamic",
 					"Meaning": "COL",
 					"Style": "S(Distress, LW)",
-					"Utterance": "Oponente Distress Baixo",
-					"UtteranceId": "TTS-91AC6F1CCE5B47EE60EEFE31CDF816A9"
+					"Utterance": "<gaze(player|nextPlayerId|)> pensas que me assustas com essa jogada, mas eu não tenho medo de nada",
+					"UtteranceId": "TTS-4BD81C2A0D5E790A61267FFAEE9F5700"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)>De certeza que estão a fazer batota",
+					"UtteranceId": "TTS-1A858C8B3FCEDAEC83EE1A7B8612807B"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Isto está mau para estes lados",
+					"UtteranceId": "TTS-009A05C6117AE745DA1AF85DA99010FB"
 				}, 
 				{
 					"CurrentState": "PlayOpponent",
 					"NextState": "Dynamic",
 					"Meaning": "COL",
 					"Style": "S(Distress, HW)",
-					"Utterance": "Oponente Distress Alto",
-					"UtteranceId": "TTS-3C8C9A776AEF9D568D7592C73A6D6922"
+					"Utterance": "<gaze(player|nextPlayerId|)> Esta jogada pode não ter sido boa para nós, mas à mesma gosto de jogar contigo",
+					"UtteranceId": "TTS-7E9E163C1B2BC010DD280B734DFDD012"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Bora colega, o nosso oponente já jogou",
+					"UtteranceId": "TTS-20ED26D9ED68E9E8343B91B517338865"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Os nossos adversários jogam bem, temos de nos esforçar parceiro",
+					"UtteranceId": "TTS-5C653C9D07C5C7B1EC879869DE7E92F2"
 				}, 
 				{
 					"CurrentState": "PlayOpponent",
 					"NextState": "Dynamic",
 					"Meaning": "COL",
 					"Style": "S(Joy, LW)",
-					"Utterance": "Oponente Joy Baixo",
-					"UtteranceId": "TTS-1530503CFB88B78A3FDA06622A78D11E"
+					"Utterance": "<gaze(player|nextPlayerId|)> Vocês nem dão luta",
+					"UtteranceId": "TTS-5EDE8FCD52D0E834237120AF287861F9"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Com vocês a jogarem assim, nem me preciso de esforçar para ganhar",
+					"UtteranceId": "TTS-E4FEFE541235CE031F6BA65067AE47FB"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)>Já estava à espera que jogasses mal",
+					"UtteranceId": "TTS-F7604F9F8B3CEE0DAC9EB15EFD5D605F"
 				}, 
 				{
 					"CurrentState": "PlayOpponent",
 					"NextState": "Dynamic",
 					"Meaning": "COL",
 					"Style": "S(Joy, HW)",
-					"Utterance": "Oponente Joy Alto",
-					"UtteranceId": "TTS-8C610678550D252D11A5FFBF4B5B5C71"
+					"Utterance": "<gaze(player|nextPlayerId|)> Espétacular!",
+					"UtteranceId": "TTS-41BF723A6F22580CD1FD6FBD947A5414"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Fazes magia com as cartas parceiro",
+					"UtteranceId": "TTS-180D5936D7D997BD441AE5511A94FFFD"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> As tuas jogadas nunca me desiludem",
+					"UtteranceId": "TTS-181AC80489E1C0E8682E5E0A546848CA"
 				}, 
 				{
 					"CurrentState": "Shuffle",
@@ -2699,32 +2635,96 @@
 					"NextState": "Dynamic",
 					"Meaning": "COL",
 					"Style": "S(Joy, LW)",
-					"Utterance": "Parceiro Joy Baixo",
-					"UtteranceId": "TTS-EAE13EC17BC7DC34E8486C1BAB8E1C58"
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> somos como uma máquina bem oleada a jogar<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-1AC43E45C246B2E55BFAB9497A8191D7"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)> parece me que nós funcionamos bem como equipa, estamos no caminho certo para ganhar <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-E6A2727CB49CA4D207736A91544CE2CB"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy1)> estou contente com os resultados que estamos a atingir <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-DFA7E27BCCA25CE547840B356355C75A"
 				}, 
 				{
 					"CurrentState": "PlayPartner",
 					"NextState": "Dynamic",
 					"Meaning": "COL",
 					"Style": "S(Joy, HW)",
-					"Utterance": "Parceiro Joy Alto",
-					"UtteranceId": "TTS-504C293D4303B41D648AEBA603A23639"
+					"Utterance": "<gaze(player|playerID|)> <animate(joy5)> Quer ganhemos ou não, ter-te conhecido já valeu a pena, espero que possamos ficar amigos <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-1B99B7D977D14A0A54DBAB2A790938BE"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy4)>  estou feliz pela nossa equipa, acho que tenho muita sorte em ter-te na minha equipa <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-0DE6893885910FEB62B2202AE87BEC37"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> estou contente com nosco,  formamos uma boa equipa os dois, companheiro <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-551B8CD07F4065C6B215378029EE2E8E"
 				}, 
 				{
 					"CurrentState": "PlayPartner",
 					"NextState": "Dynamic",
 					"Meaning": "COL",
 					"Style": "S(Distress, LW)",
-					"Utterance": "Parceiro Distress Baixo",
-					"UtteranceId": "TTS-EC07BDD1AF10AE6E20A364109FCC5DF9"
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness4)> Isto está a ficar tramado para nós, os nossos adversários dão luta. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-4BA9C61826730D5906FF8FB86DB5E5E7"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness5)> a nossa equipa está em sarilhos <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-6531ECFB70B4962D945528A70656A6E7"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness4)> nós estamos no mau caminho <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-9D34AC7B19E84A5417E23F5E0EFFF7BE"
 				}, 
 				{
 					"CurrentState": "PlayPartner",
 					"NextState": "Dynamic",
 					"Meaning": "COL",
 					"Style": "S(Distress, HW)",
-					"Utterance": "Parceiro Distress Alto",
-					"UtteranceId": "TTS-00D35801809E84C625554C08ABAF1DB1"
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness2)> Apesar de estar dificil, devo dizer que estou a adorar esta experiência <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-23E77D687BD45F934E4FFBAC24973AD5"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)><animate(sadness2)> Os nossos oponentes estão à altura, colega. É bom quando o jogo é renhido, não é? <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-EE7713C598A483D693BD4A43CB3F8DF9"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> Isto <animate(sadness2)> podia estara correr melhor para nós companheiro. Mas pelo menos estou a gostar de estar contigo <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-94C6E1F2EA0CE5912DC830014BAD8F65"
 				}, 
 				{
 					"CurrentState": "NextPlayer",
@@ -3053,6 +3053,1310 @@
 					"Style": "HW",
 					"Utterance": "<gaze(player|playerID|)> É a tua vez de partir as cartas!",
 					"UtteranceId": "TTS-07C3AFE812A763011AA7A92926E4F4FD"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Não estava, à espera desta pois não? Ah pois é, não podia ser outra coisa, vinda dos melhores.",
+					"UtteranceId": "TTS-65D915718C436695691DB6B5DA10857E"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Tomem lá esta! ",
+					"UtteranceId": "TTS-44DE814C8BA24032A5D5BDAE4BC63ACA"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Já estou farto de jogar contigo.",
+					"UtteranceId": "TTS-F1AA2500B59418E4D58FED71E8390987"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Quem me dera que jogasses sempre assim",
+					"UtteranceId": "TTS-D17A79477F59A85E3CAE5A7D5DD99ABF"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Que chatice, este jogo nunca mais acaba",
+					"UtteranceId": "TTS-B11D5DA7513DD95A2917FA308BB4006E"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Nem pensem em tentar fazer-me frente",
+					"UtteranceId": "TTS-FEE61616A495B92F5DB4E74F475BDD68"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Se fosse a vocês desistia já",
+					"UtteranceId": "TTS-9C5BB35B3E61D5A161B8EDDFE0434722"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Ena parceiro, não foi uma jogada muito boa para o nosso lado, mas não faz mal",
+					"UtteranceId": "TTS-6E0CD7784ACECA12EC8B3A54FEF8FEB3"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)>Hum... Esta jogada dificulta um bocadinho as coisas... Mas assim é que eu gosto",
+					"UtteranceId": "TTS-AACB35532D801D2A5F08090F947BDADD"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Isto está a ser giro",
+					"UtteranceId": "TTS-D129AEFE4DEA6881B5B6DA5F2A3F87BF"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Estou a ver que temos oponentes à altura",
+					"UtteranceId": "TTS-B078F5F40A69C7A36C730F88BBD03B40"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Gostava de poder jogar com vocês todos os dias",
+					"UtteranceId": "TTS-D40743CAB7D0022A5D6BF274062A7AF8"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Jogar com oponentes assim vale a pena, não achas parceiro?",
+					"UtteranceId": "TTS-1BA11FE26ED28531871AA9F6D5C8AEDD"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Parceiro, espero que te estejas a divertir",
+					"UtteranceId": "TTS-AEFB758813F48BBF0FB2D8D88A460397"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Amigo, és o meu companheiro de sueca favorito",
+					"UtteranceId": "TTS-51E94E1BDAD9B96C7D2FB49E06857508"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Olha, esta jogada dificultou um bocadinho as coisas para a nossa equipa... Mas à mesma estou a adorar jogar contigo",
+					"UtteranceId": "TTS-84E5C4F50D3EC0BD39C33C0F66D14A5A"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> De shou mast gou ón",
+					"UtteranceId": "TTS-5EC731B328A5354C0F0E01C4E73002E6"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Fazemos uma boa equipa parceiro, mas temos de ter cuidado a jogar contra oponentes tão habilidosos",
+					"UtteranceId": "TTS-64B18856F8357C90367751DE07398668"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)>Desta não estava eu à espera",
+					"UtteranceId": "TTS-DBF3B940B46066F2C82B0CE7AB6F1B57"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Confio na nossa equipa, por mais dificil que fique o jogo",
+					"UtteranceId": "TTS-31E437A7F9917F644B67CB2F9327FEE2"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Os nossos adversários dão luta... Não pensei que fosse tão dificil",
+					"UtteranceId": "TTS-83F238E0B5ACCDDB5FA224F0B98CFCA2"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> O jogo ainda não está decidido amigo",
+					"UtteranceId": "TTS-8396DF9C42790BBE3AD19E1009BC40D3"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> A esperança é a última a morrer companheiro!",
+					"UtteranceId": "TTS-087AF7B09B02EEEF3F7B845F155A3557"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> O truque não está nas cartas, está em ter um bom parceiro.",
+					"UtteranceId": "TTS-88981FE70D5A568ADF821E5D54F9E769"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)>Somos mesmo fixes amigo! Bora lá dar a volta ao jogo!",
+					"UtteranceId": "TTS-153EBC58EA2D52BA2D3DD87C95255F00"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Hum... E agora parceiro? De certeza que me vais ajudar",
+					"UtteranceId": "TTS-789B8B4C528993E57F3F737E98CC7F27"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Isso foi batota e eu não gosto de batoteiros",
+					"UtteranceId": "TTS-6F5B958AF8FACF19508708C8608251EE"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Não gostei dessa jogada",
+					"UtteranceId": "TTS-9EEFE8A08B213992D512686A8B6E2FD2"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Não estás à minha altura, mesmo com jogadas dessas",
+					"UtteranceId": "TTS-5696628F3B54CD19F581C360755B331F"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> espera sentado que eu já te vou roubar ainda mais pontos",
+					"UtteranceId": "TTS-AFC2AFA6A8B1DB50DC12056B376D375F"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Vou-te tirar ainda mais pontos do que aqueles que me tiraste com essa jogada",
+					"UtteranceId": "TTS-86B8154C9DE20C39858E74F528E253B8"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Acho que é melhor trocar de equipa",
+					"UtteranceId": "TTS-D24D57C72F6D37AD78437C8338A6D13C"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)>Quero esses pontos de volta, isto não é justo",
+					"UtteranceId": "TTS-097176EA99DE52553642CEFD9321A4AB"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> que vergonha",
+					"UtteranceId": "TTS-AD8076EADEEC93094AF593BB512DB2E0"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Assim não gosto de jogar",
+					"UtteranceId": "TTS-8BA486C93C319F5E4AAE6F9AAEE8C85F"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Levas esses pontos, mas não levas mais nenhuns, ouviste?",
+					"UtteranceId": "TTS-6371A2212BFB66D54C6D999C5E5FDB2B"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)>Perdi a batalha, mas não perdi a guerra... Já vão ver",
+					"UtteranceId": "TTS-1132BEBAB300D856840531A56922B989"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)>Estás a deixar o deus da sueca furioso!",
+					"UtteranceId": "TTS-289C411915804ACCDDA4C17CDD2417A1"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Não gostei",
+					"UtteranceId": "TTS-FABC6AC922DD29219F9892838625D301"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Jogada a jogada, mais perto da vossa derrota",
+					"UtteranceId": "TTS-29E04527E8A8D442F3902F1AF6A59B86"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Nem acredito que vão levar esses pontos.",
+					"UtteranceId": "TTS-2A9944DAE04774B492622949B416C344"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Batotaa!",
+					"UtteranceId": "TTS-A668BFBFC40B8E6CC3D471D53B60DF2C"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Nem pensem em tirar-me mais pontos. Vão-se arrepender",
+					"UtteranceId": "TTS-94AA7C86D29D3781ADD56BFF704923FE"
+				}, 
+				{
+					"CurrentState": "PlayOpponent",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|nextPlayerId|)> Nunca mais quero voltar a jogar com vocês",
+					"UtteranceId": "TTS-9C8478F199C27CE0E81976B83A50FBFC"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness2)> Não faz mal colega... Estou sempre aqui para te apoiar <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-2B1898ECBBCEE185CB9524F9AF0190C6"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)>Incrível! Jogas que nem um profissional <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-C4BECE29F744AF93034EB485FA0ED249"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Quem me dera jogar tão bem quanto tu amigo <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-9AB5E983A7859673C26FD9A66EF2A4EC"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Estou tão feliz com essa jogada que só me apetece abraçar-te <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-3EE50F9B3942C28D72F6C2255A9D4F36"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Epa colega, és o cristiano ronaldo da sueca... Sempre a marcar <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-C18843A2BE67B5C39168F68E44FA0EB1"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Acho que nunca conheci ninguém que jogasse tão bem <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-BB3584D87F67AB1740B2482DFECB80F6"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Quem me dera ter filmado esta jogada para reviver este momento<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-C2FCBF282D8D32AFCA73A32B5198BF4C"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)>Lindo <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-62DFB0135F0A0E38FA4EAE9DBF56DC73"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Mesmo que não jogues sempre bem, eu gosto sempre de ti <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-F876201737E99185528F3BE5CE167C70"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Adoro a nossa equipa <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-16D71402DE0836A33ABE16851ED98F15"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Essa jogada pode não ter sido muito boa... Mas não faz mal, é com os erros que se aprende<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-33BB7C8944CF4E17BC2F37B66E9235B2"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Este jogo já está no papo, companheiro. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-12E96B7F6D38389E01FEB9D378BEB87A"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Genial, companheiro... Simplesmente genial.<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-7F510D3E26E5E758848EA74FE0DD4CB8"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Oops, havemos de recuperar estes pontos perdidos facilmente <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-810E2F62AF86F8C8F246E95EDBC6CA19"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Se há equipa que consegue recuperar depois desta jogada menos boa, é a nossa companheiro<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-D8CF0C8531A72FCFD10B28FC1AAA18A2"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Bora parceiro. Estou a gostar muito de jogar contigo <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-F71CBE5F4CDDFA991B72FB691D0E1F38"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Isto está a correr mesmo bem para nós amigo. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-0772375523428C5AE76485799A3B8733"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Só me dás alegrias! <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-4A5D2E91A9B3627D9A4DBBCD50DAAFF6"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)>Vejam e aprendam! Esta jogada foi pura magia <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-D6A8A5C025E7F0CC3B34F9C9E72B3BB7"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> É um orgulho estar na tua equipa amigo!<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-81A416C8EEC75E3120AA827F3118F4EC"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Boa, boa! <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-73D016EE16BFC0DB84F8A1C1095B520C"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Estamos no bom caminho, amigo. Continua a fazer jogadas dessas. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-9EB22872571DCB2742E1DC00CA3DB707"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness4)> Não estou a gostar nada disto. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-AF4EE178D5B55694881A8E0CB88D2E55"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness5)> É bom que comeces a jogar como deve de ser, não me está nada a apetecer perder. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-9DF9FE2BB8A6B9EA79446D1BED619596"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness4)> Mas vais comecar a jogar bem ou não?<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-0136E3AD69E75324C1DA12C1E646AFCE"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness4)>Não posso ser eu a fazer tudo sozinho, vê lá se comecas a prestar atenção <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-A976E590D7374489DACF2B7341EAF53B"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness5)> Não estou  a gostar de jogar contigo assim <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-0E2621BED6F130A6DDCAB9CDC50C6AB3"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness4)> Assim vamos perder, vá lá, presta atenção… <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-1A7A8FAF36B18B6CB7706D1D665EECA2"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness4)> Se continuares a jogar assim, nunca mais volto a jogar contigo<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-A6394C5D956971F1E8F39D84C1594AC0"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness5)> Tanto tempo para jogar… E nem consegues fazer uma jogada de jeito <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-15240F5968120CDCAF5DB0B83D69C7CE"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness5)>Que tristeza de jogada esta...<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-DB504DC460A80EB6846AB97FF344FDF8"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness5)> Mau maria...<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-D53198C0A96ED76477E5CFA3CA563953"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness5)>Mas tu estás a fazer de propósito para perder? <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-27AC71B233A66A974DAD3483AF54D13C"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)> Os nossos oponentes ainda acham que têm hipóteses de ganhar… Coitadinhos … <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-024D1F8094DCEBAB1AF19E96EFDC4648"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)> Desta vez não me desiludist <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-0D85698D698B48DCA21CD0CC0B366356"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)> Vês não é dificil? Vê lá se continuas a jogar bem, já que agora lhe ganhaste o jeito<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-9D3B81580BDC4773B1D9054EE79429B1"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)> Isto já está quase ganho parceiro, não estragues as nossas hipóteses de ganhar<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-2681CE542A24E8F8F0ACA7BD79AE07D6"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)> Atenção! Estás a jogar comigo portanto já sabes que é melhor jogares bem<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-575BC50A55E3091C030BBBEAE18B5AFB"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)> Jogaste bem, mas ainda tens muito que aprender <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-0F062542A76F58EB3640235AC6D5C862"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)>Essa jogada aprendeste comigo, de certeza<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-D26B7B019B66EDDF952B2919D127C414"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)> Assim não estás a ir mal...<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-63C66A252007A9EE22C8466DF08D6D06"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)> É melhor continuares assim, se queres continuar a jogar comigo <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-B19291CB12029E1070A7B3EE33098DB3"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)> Concentração<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-94957C05FDFC1099D00340DB597045CF"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)> Estamos a dar um espétáculo.. Não me desiludas<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-263371D7676A2C443141559E5B09E1A0"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> Deixa-me cá ver o que eu vou jogar",
+					"UtteranceId": "TTS-9D9E82ECC90DDD17EEBE12D0694CC2CA"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> Bem, como sempre vou ter que ser eu a dar a volta ao jogo",
+					"UtteranceId": "TTS-14A1D4D8E3873DC180824323533AB6BA"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> Tenho de pensar bem esta jogada",
+					"UtteranceId": "TTS-0CE7D3BA47F84858CFCAD88BDF97EA05"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> Com a minha próxima jogada vou fazer magia",
+					"UtteranceId": "TTS-B3206D64D7463E9C668658B94B97A30D"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> Ora agora sou eu, não é?",
+					"UtteranceId": "TTS-EB05B1CC7A1974F5740473088526934A"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> É a minha vez de arrasar",
+					"UtteranceId": "TTS-3246612432F499FF21E468D50E725913"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> Prestem atenção a esta jogada",
+					"UtteranceId": "TTS-388F485C885DF785CA51931C2A3CCBD5"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> Aprendam comigo que eu não duro para sempre",
+					"UtteranceId": "TTS-3A41BA30D8CFD4AC20E845678B398B7C"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> Isto está a correr mal para o nosso lado, não pode ser",
+					"UtteranceId": "TTS-4271BF95960F00A82DF1ABA73120F0C1"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> Alguém tem que fazer alguma coisa, se não não dá",
+					"UtteranceId": "TTS-CDF65A47CBF7CBE343982F65B9136FBB"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, LW)",
+					"Utterance": "<gaze(player|playerID|)> Não estou a gostar mesmo nada disto, mau maria",
+					"UtteranceId": "TTS-A8876B25A1FBD2C45C781D040B994D85"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> Não te preocupes parceiro, eu jogo sempre bem",
+					"UtteranceId": "TTS-013A60F1A347812269747CF0F0442402"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, LW)",
+					"Utterance": "<gaze(player|playerID|)> Comigo na tua equipa, não tens nada a perder",
+					"UtteranceId": "TTS-E37A58A66F7CF4200F4EBBB819B69278"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> Joga parceiro, este jogo está a ser algo de fantástico",
+					"UtteranceId": "TTS-3E7AFD27B6F25AA43F4ED5996C458DF4"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> Bora lá amigo, isto está mesmo a correr bem para a nossa equipa",
+					"UtteranceId": "TTS-CC3546DA148B906509A229995156DA0D"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> Nada a temer companheiro, nós os dois juntos de certeza que vamos triunfar",
+					"UtteranceId": "TTS-A8CB27A11E09A2C1AC146BD0E744C89D"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> Como uma equipa como a nossa, a diversão é garantida",
+					"UtteranceId": "TTS-B8365A29B8469D2B16D0CD061F2AAD49"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> Bora lá colega, é só continuar a jogar como tens jogado",
+					"UtteranceId": "TTS-22492C3E834D17AF8CB163B66E7C9C30"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> És tu amigo!",
+					"UtteranceId": "TTS-1BF1185F669A482162176EAA3A271802"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> colega da sueca, mostra-nos como se faz",
+					"UtteranceId": "TTS-B69D04072C0CBB63FBB5EB2CB6C3342F"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> Parceiro, não te esquecas que é a tua vez de jogar",
+					"UtteranceId": "TTS-AF1782D255E82907B521820D584540A0"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> És um parceiro de sueca fantástico, colega",
+					"UtteranceId": "TTS-DD3B1F150F26A9FCFAE8836DF383DC2B"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> Que bom jogar contigo. É a tua vez amigo.",
+					"UtteranceId": "TTS-C27676F25A723C420CC5721A83C83BD5"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Joy, HW)",
+					"Utterance": "<gaze(player|playerID|)> Tenho aprendido bastante com a tua maneira de jogar, colega. ",
+					"UtteranceId": "TTS-B1912ED5B08517AEADB783EA48C7E9C7"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> És tu colega, confio em ti.",
+					"UtteranceId": "TTS-8753475CBB26E4BC050D90DC465CC1ED"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> Parceiro, é a tua vez! De certeza que vais jogar bem.",
+					"UtteranceId": "TTS-46769D7659BA8124626B32F8B9155B27"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> Colega, está na tua vez! Tu consegues, bora lá!",
+					"UtteranceId": "TTS-CA8A81BBA13904A22536EB9118EF95B9"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> És tu agora, amigo",
+					"UtteranceId": "TTS-551F8B2BA07BBEF657508D055CE361AF"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> Podes jogar parceiro!",
+					"UtteranceId": "TTS-C3635C4320EFC9267E27683DA50964FF"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> Não tenhas medo de jogar, eu vou gostar de jogar contigo de qualquer maneira",
+					"UtteranceId": "TTS-A7E759A6C0232206DAF277A83FF7C3C6"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> Parceiro, és tu a jogar. Independentemente do que jogues, eu já tenho muito orgulho de estar na tua equipa.",
+					"UtteranceId": "TTS-0B100B49D1503B45C1A71D4D69894627"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> És tu amigo!",
+					"UtteranceId": "TTS-1BF1185F669A482162176EAA3A271802"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Distress, HW)",
+					"Utterance": "<gaze(player|playerID|)> Bora companheiro, está na tua vez.",
+					"UtteranceId": "TTS-A7BE8FDC9A407A76390C67A28345AE80"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy5)> Tenho orgulho em ter-te do meu lado e poder ser teu amigo<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-83843D522081226291CB11F3406C3E3D"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, HW)",
+					"Utterance": "<gaze(player|playerID|)> É isso mesmo caro amigo,<animate(joy4)> nós os dois juntos fazemos magia acontece! <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-6011E8947EEA46F6072A7D0389FB8CA0"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy4)> Muito bem, que equipa incrível! <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-1AC82095B72ADF5D71850C06E5415036"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)>Nós temos de continuar assim, estamos imparáveis! <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-5ED83DE43F8518F483148D4FD98BF4B4"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy4)> Bem jogado amigo, dá orgulho ter-te do meu lado! <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-821DFA246B4F6F21E70EC426DFA05C2D"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy5)> Estou orgulhoso da nossa equipa, confiar em ti vale mesmo a pena <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-AA8AC3984098CC3707354318064AC8D7"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> grande jogada da nossa equipa, nunca me deixas ficar mal companheiro <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-A2CBA4536124AC7AED0B29D43E087E1E"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)> Trabalhamos bem juntos colega <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-B51B3D6A08D652B532CA2148DDCC4345"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, LW)",
+					"Utterance": "<gaze(player|playerID|)> com <animate(joy1)> O importante não é ganhar, o importante é atingir um resultado justo <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-859D4B80C49E95A1D43DD91685BC131C"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy1)> Gosto muito de jogar contigo <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-AB212C9193221A4ACC06407348EF43D6"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy1)> Tens de me ensinar uns truques, jogar contigo tem-me ensinado muitas coisas<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-D0EBCDE92762301C0ACE2BE12ECF2D42"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy1)>Já te disseram que és mesmo bom jogador? Onde aprendeste a jogar assim? <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-0485E79948F04D1F3B803969DCA0615E"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy1)>Assim sim, nós estamos a jogar bem <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-B21F958CB31B8FFCA7985E2552A3C64A"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, LW)",
+					"Utterance": "<gaze(player|playerID|)>Sim <animate(joy1)> Quem diria que iria ser tão bom jogar contigo <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-B6274F9F6A63154430DE1C66A7F782B6"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Shame, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness3)>Foi um resultado justo face ao jogo que fizemos colega<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-EAF6DBECE6E744D59316588BED0A4247"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Shame, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness2)> Não estou muito contente com este  resultado, mas só errando podemos aprender, não concordam?<gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-02F642CC910D0148DC2F0F1357C28D0B"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Shame, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness1)> Fogo, não correu como queriamos. Ainda assim acredito em nós amigo <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-06635A83A36DA5B66D667A23EEFF33E2"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Shame, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness3)>Bolas, esta não correu muito bem. Mas com a equipa que temos de certeza que melhoramos num instante <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-83D8DA7CB4B24553B24170152D154251"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Shame, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness4)> Que lamentável da nossa parte <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-6F130D56C428AD6364A6D6E76AE0E050"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Shame, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness3)> Nós não estamos a dar o nosso melhor. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-AFA94C75D32DC047495CF0262F8780A4"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Shame, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness5)> A jogar assim, nós não vamos lá. Tenho confiança que conseguimos fazer melhor parceiro <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-2CE53D237DFAD3B010A62960FF84F2A5"
+				}, 
+				{
+					"CurrentState": "PlayPartner",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Shame, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness4)> Nós somos capazes de jogar melhor que isto. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-AF364D092EE73F125C5364BDFC46EF92"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy4)> Nós jogamos mesmo muito bem, colega. Quem diria que nos dariamos tão bem? <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-9C05A7E4F650291E3BE2479D9DD2F6D7"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy5)> Nós  estamos a arrasar nesta ronda,! <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-3B6E4B63037906B247979E189234EE2D"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy4)> Bolas, estou mesmo orgulhoso de ti parceiro. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-B27C9156D5DF34C1F073E9D416479968"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Aiii caramba, estamos imparáveis amigo!! <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-0AFFAFE03732A32DB6E1B55A00F2F690"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy4)> Nós estamos a ir muito bem camarada. Se continuarmos assim, tenho confiança que vamos ser recompensados <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-64F46C214C6CA665C7472B009B43B9DD"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> A jogar assim, de certeza que vamos conseguir bons resultados! <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-A9E40CF0FE295B6F7E920AB585C12EA3"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy4)> espétaculár. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-84A93554B86047C33ACCAF6BA91044D7"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy2)>Acho que estamos a conseguir fazer um bom jogo colega <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-DE54A0DF9568CA345C413F1BD7D0E442"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy3)> Estou a gostar muito, és um bom colega de equipa <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-758ED002F58B8DA1597628B24E6BC66D"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy1)> Mais uma cartinha rumo à vitória <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-147EF0B242215A5ADF0E690B40D03824"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy1)> Acredito na nossa equipa. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-D37BC895ABEFC9E51BDA515FB11EA1C1"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy1)> Nós temos de continuar assim; <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-208CFD47B6DE1D9E10007F5849408647"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(joy1)> estou impressionado com nosco <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-7A4A2F6BAFEA063336D8A4D6FB5B45BC"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Pride, LW)",
+					"Utterance": "<gaze(player|playerID|)>  Muito <animate(joy1)> bem colega, estou a gostar da nossa prestação <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-8F132DB44D2E3FA4C9AAC30773A96007"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Shame, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness3)> Não nos quero envergonhar, mas éra o que eu tinha. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-D032ABF847AF6875FB974E17D75A593D"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Shame, HW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness3)> Só tinha ésta para jogar, desculpa colega. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-D75CA38954A02D9F4B48F7B5CCE8E2E8"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Shame, HW)",
+					"Utterance": "<gaze(player|playerID|)> Colega, <animate(sadness3)> Desculpa ésta jogada vergonhosa para a nossa equipa. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-3EE191F57F0E3F16F599C88B1BF41FBD"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Shame, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness3)> éh pá; má jogada da nossa parte, para a próxima já sabemos... <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-912480DB107EA7B179C62E56F57C6E4B"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Shame, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness3)> Nós não estivémos lá muito bem desta vez. <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-DB19DE16A07380CB27425FC6891E26A8"
+				}, 
+				{
+					"CurrentState": "PlaySelf",
+					"NextState": "Dynamic",
+					"Meaning": "COL",
+					"Style": "S(Shame, LW)",
+					"Utterance": "<gaze(player|playerID|)> <animate(sadness3)> Acho que este não foi o nosso melhor momento em equipa, mas melhores momentos se seguirão com certeza <gaze(player|nextPlayerID|)>",
+					"UtteranceId": "TTS-C47F127E936E9188A9E44A0160596512"
 				}]
 		},
 	"types": [
