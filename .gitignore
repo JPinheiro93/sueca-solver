@@ -37,4 +37,5 @@ Scenarios/Logs/*.rpc
 #FAtiMA
 authoringtools/*
 
+*.ide
 /.vs/
