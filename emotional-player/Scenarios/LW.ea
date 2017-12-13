@@ -1,0 +1,58 @@
+{
+	"root":
+		{
+			"classId": 0,
+			"Description": null,
+			"AppraisalRules":
+				{
+					"AppraisalWeight": 1,
+					"Rules": []
+				},
+			"EmotionDispositions": [
+				{
+					"Emotion": "*",
+					"Decay": 1,
+					"Threshold": 1
+				}, 
+				{
+					"Emotion": "Anger",
+					"Decay": 10,
+					"Threshold": 1
+				}, 
+				{
+					"Emotion": "Gratitude",
+					"Decay": 1,
+					"Threshold": 10
+				}, 
+				{
+					"Emotion": "Distress",
+					"Decay": 6,
+					"Threshold": 1
+				}, 
+				{
+					"Emotion": "Reproach",
+					"Decay": 10,
+					"Threshold": 1
+				}, 
+				{
+					"Emotion": "Admiration",
+					"Decay": 1,
+					"Threshold": 10
+				}, 
+				{
+					"Emotion": "Joy",
+					"Decay": 1,
+					"Threshold": 10
+				}, 
+				{
+					"Emotion": "Gratification",
+					"Decay": 1,
+					"Threshold": 10
+				}]
+		},
+	"types": [
+		{
+			"TypeId": 0,
+			"ClassName": "EmotionalAppraisal.EmotionalAppraisalAsset, EmotionalAppraisal, Version=1.4.1.0, Culture=neutral, PublicKeyToken=null"
+		}]
+}
