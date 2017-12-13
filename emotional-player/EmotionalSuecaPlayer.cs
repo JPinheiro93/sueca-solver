@@ -191,27 +191,10 @@ namespace EmotionalPlayer
             SuecaEvent ev1 = new SuecaEvent(Consts.INIT);
             _suecaRPC.AddSuecaEvent(ev1);
             ev1.OtherStringInfos = new string[] { SubjectName(_id) };
-            //if (_agentType.StartsWith(Consts.AGENT_TYPE_GROUP))
-            //{
-                ev1.AddPropertyChange("Player(" + SubjectName(_id) + ")", Consts.PARTNER, Consts.DEFAULT_SUBJECT);
-                ev1.AddPropertyChange("Player(" + SubjectName((_id + 1) % 4) + ")", Consts.OPPONENT, Consts.DEFAULT_SUBJECT);
-            //}
-            //else if (_agentType.StartsWith(Consts.AGENT_TYPE_INDIVIDUAL))
-            //{
-            //    ev1.AddPropertyChange("Player(" + SubjectName(_id) + ")", Consts.PARTNER, Consts.DEFAULT_SUBJECT);
-            //    ev1.AddPropertyChange("Player(" + SubjectName((_id + 1) % 4) + ")", Consts.OPPONENT, Consts.DEFAULT_SUBJECT);
-            //    ev1.AddPropertyChange("Player(" + SubjectName((_id + 2) % 4) + ")", Consts.PARTNER, Consts.DEFAULT_SUBJECT);
-            //    ev1.AddPropertyChange("Player(" + SubjectName((_id + 3) % 4) + ")", Consts.OPPONENT, Consts.DEFAULT_SUBJECT);
-            //}
 
-            if (_nameId == 0)
-            {
-                ev1.AddPropertyChange("Dialogue(Style)", "HW", Consts.DEFAULT_SUBJECT);
-            }
-            else
-            {
-                ev1.AddPropertyChange("Dialogue(Style)", "LW", Consts.DEFAULT_SUBJECT);
-            }
+            ev1.AddPropertyChange("Player(" + SubjectName(_id) + ")", Consts.PARTNER, Consts.DEFAULT_SUBJECT);
+            ev1.AddPropertyChange("Player(" + SubjectName((_id + 1) % 4) + ")", Consts.OPPONENT, Consts.DEFAULT_SUBJECT);
+            
             ev1.AddPropertyChange(Consts.ID_PROPERTY, _id.ToString(), Consts.DEFAULT_SUBJECT);
             ev1.Finished = true;
 
