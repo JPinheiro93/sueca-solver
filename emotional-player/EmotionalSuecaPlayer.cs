@@ -194,7 +194,9 @@ namespace EmotionalPlayer
 
             ev1.AddPropertyChange("Player(" + SubjectName(_id) + ")", Consts.PARTNER, Consts.DEFAULT_SUBJECT);
             ev1.AddPropertyChange("Player(" + SubjectName((_id + 1) % 4) + ")", Consts.OPPONENT, Consts.DEFAULT_SUBJECT);
-            
+
+            ev1.AddPropertyChange("Dialogue(Style)", _agentType, Consts.DEFAULT_SUBJECT);
+
             ev1.AddPropertyChange(Consts.ID_PROPERTY, _id.ToString(), Consts.DEFAULT_SUBJECT);
             ev1.Finished = true;
 
