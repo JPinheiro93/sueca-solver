@@ -137,8 +137,43 @@
 			"EmotionDispositions": [
 				{
 					"Emotion": "*",
-					"Decay": 9,
+					"Decay": 1,
 					"Threshold": 1
+				}, 
+				{
+					"Emotion": "Anger",
+					"Decay": 10,
+					"Threshold": 1
+				}, 
+				{
+					"Emotion": "Gratitude",
+					"Decay": 1,
+					"Threshold": 10
+				}, 
+				{
+					"Emotion": "Distress",
+					"Decay": 6,
+					"Threshold": 1
+				}, 
+				{
+					"Emotion": "Reproach",
+					"Decay": 10,
+					"Threshold": 1
+				}, 
+				{
+					"Emotion": "Admiration",
+					"Decay": 1,
+					"Threshold": 10
+				}, 
+				{
+					"Emotion": "Joy",
+					"Decay": 1,
+					"Threshold": 10
+				}, 
+				{
+					"Emotion": "Gratification",
+					"Decay": 1,
+					"Threshold": 10
 				}]
 		},
 	"types": [

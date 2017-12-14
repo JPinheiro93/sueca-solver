@@ -29,13 +29,13 @@ namespace EmotionalPlayer
         private int _currentPlayInTrickId;
 
         private Random _randomNumberGenerator;
-        //private bool PendingRequest;
+        private bool PendingRequest;
         public bool Talking;
         public bool SomeoneIsTalking;
-        //private string pendingCategory;
-        //private string pendingSubcategory;
-        //private int requestCounter;
-        //private bool Retrying;
+        private string pendingCategory;
+        private string pendingSubcategory;
+        private int requestCounter;
+        private bool Retrying;
         private int numRobots;
 
         public EmotionalSuecaPlayer(string clientName, string scenarioPath, string agentType, string charactersNames = "") : base(clientName, charactersNames)
@@ -191,27 +191,12 @@ namespace EmotionalPlayer
             SuecaEvent ev1 = new SuecaEvent(Consts.INIT);
             _suecaRPC.AddSuecaEvent(ev1);
             ev1.OtherStringInfos = new string[] { SubjectName(_id) };
-            if (_agentType.StartsWith(Consts.AGENT_TYPE_GROUP))
-            {
-                ev1.AddPropertyChange("Player(" + SubjectName(_id) + ")", Consts.PARTNER, Consts.DEFAULT_SUBJECT);
-                ev1.AddPropertyChange("Player(" + SubjectName((_id + 1) % 4) + ")", Consts.OPPONENT, Consts.DEFAULT_SUBJECT);
-            }
-            else if (_agentType.StartsWith(Consts.AGENT_TYPE_INDIVIDUAL))
-            {
-                ev1.AddPropertyChange("Player(" + SubjectName(_id) + ")", Consts.PARTNER, Consts.DEFAULT_SUBJECT);
-                ev1.AddPropertyChange("Player(" + SubjectName((_id + 1) % 4) + ")", Consts.OPPONENT, Consts.DEFAULT_SUBJECT);
-                ev1.AddPropertyChange("Player(" + SubjectName((_id + 2) % 4) + ")", Consts.PARTNER, Consts.DEFAULT_SUBJECT);
-                ev1.AddPropertyChange("Player(" + SubjectName((_id + 3) % 4) + ")", Consts.OPPONENT, Consts.DEFAULT_SUBJECT);
-            }
 
-            if (_nameId == 1)
-            {
-                ev1.AddPropertyChange("Dialogue(Style)", "HW", Consts.DEFAULT_SUBJECT);
-            }
-            else
-            {
-                ev1.AddPropertyChange("Dialogue(Style)", "LW", Consts.DEFAULT_SUBJECT);
-            }
+            ev1.AddPropertyChange("Player(" + SubjectName(_id) + ")", Consts.PARTNER, Consts.DEFAULT_SUBJECT);
+            ev1.AddPropertyChange("Player(" + SubjectName((_id + 1) % 4) + ")", Consts.OPPONENT, Consts.DEFAULT_SUBJECT);
+
+            ev1.AddPropertyChange("Dialogue(Style)", _agentType, Consts.DEFAULT_SUBJECT);
+
             ev1.AddPropertyChange(Consts.ID_PROPERTY, _id.ToString(), Consts.DEFAULT_SUBJECT);
             ev1.Finished = true;
 
@@ -460,7 +445,7 @@ namespace EmotionalPlayer
                 //ev.AddPropertyChange(Consts.PLAY_INFO, playInfo, Consts.DEFAULT_SUBJECT);
 
 
-                ev.ChangeTagsAndMeanings(new string[] { "|rank|", "|suit|", "|playerID|", "|nextPlayerID|" }, new string[] { ConvertRankToPortuguese(msgRank.ToString()), ConvertSuitToPortuguese(msgSuit.ToString()), ((id+2)%4).ToString(), _ai.GetNextPlayerId().ToString() });
+                ev.ChangeTagsAndMeanings(new string[] { "|rank|", "|suit|", "|playerID|", "|nextPlayerID|" }, new string[] { ConvertRankToPortuguese(msgRank.ToString()), ConvertSuitToPortuguese(msgSuit.ToString()), ((id + 2) % 4).ToString(), _ai.GetNextPlayerId().ToString() });
                 ev.OtherIntInfos = new int[] { this._id };
                 ev.OtherStringInfos = new string[] { cardSerialized, playInfo };
 
@@ -542,7 +527,7 @@ namespace EmotionalPlayer
             _currentTrickId++;
             _currentPlayInTrickId = 0;
 
-            
+
             SuecaEvent ev = new SuecaEvent(Consts.STATE_TRICK_END);
             //int currentPlayPoints = _ai.GetCurrentTrickPoints();
             //int currentWinnerID = _ai.GetCurrentTrickWinner();
@@ -572,51 +557,51 @@ namespace EmotionalPlayer
 
         public void RequestUtterance(int playerId, string category, string subcategory)
         {
-            //if (playerId != _id)
-            //{
-            //    if (PendingRequest || Talking)
-            //    {
-            //        SuecaPub.NOUtterance(_id);
-            //    }
-            //    else
-            //    {
-            //        SuecaPub.OKUtterance(_id);
-            //        SomeoneIsTalking = true;
-            //    }
-            //}
+            if (playerId != _id)
+            {
+                if (PendingRequest || Talking)
+                {
+                    SuecaPub.NOUtterance(_id);
+                }
+                else
+                {
+                    SuecaPub.OKUtterance(_id);
+                    SomeoneIsTalking = true;
+                }
+            }
         }
 
 
         public void OKUtterance(int playerId)
         {
-            //if (playerId != _id)
-            //{
-            //    Talking = true;
-            //    PendingRequest = false;
-            //    Retrying = false;
-            //    requestCounter = 0;
-            //}
+            if (playerId != _id)
+            {
+                Talking = true;
+                PendingRequest = false;
+                Retrying = false;
+                requestCounter = 0;
+            }
         }
 
 
         public void NOUtterance(int playerId)
         {
-            //if (playerId != _id)
-            //{
-            //    if (PendingRequest && requestCounter < 3)
-            //    {
-            //        Retrying = true;
-            //        PendingRequest = false;
-            //        Thread.Sleep(_randomNumberGenerator.Next(2000));
-            //        retryRequest();
-            //    }
-            //    else
-            //    {
-            //        requestCounter = 0;
-            //        Retrying = false;
-            //        PendingRequest = false;
-            //    }
-            //}
+            if (playerId != _id)
+            {
+                if (PendingRequest && requestCounter < 3)
+                {
+                    Retrying = true;
+                    PendingRequest = false;
+                    Thread.Sleep(_randomNumberGenerator.Next(2000));
+                    RetryRequest();
+                }
+                else
+                {
+                    requestCounter = 0;
+                    Retrying = false;
+                    PendingRequest = false;
+                }
+            }
         }
 
 
@@ -639,49 +624,51 @@ namespace EmotionalPlayer
             {
                 SomeoneIsTalking = false;
             }
+            else
+            {
+                Talking = false;
+            }
         }
 
         public void RequestUtterance(string category, string subcategory)
         {
-            //if (numRobots > 1)
-            //{
-            //    PendingRequest = true;
-            //    pendingCategory = category;
-            //    pendingSubcategory = subcategory;
-            //    requestCounter++;
-            //    SuecaPub.RequestUtterance(_id, category, subcategory);
-            //}
-            //else
-            //{
-            //    Talking = true;
-            //}
-
+            if (numRobots > 1)
+            {
+                PendingRequest = true;
+                pendingCategory = category;
+                pendingSubcategory = subcategory;
+                requestCounter++;
+                SuecaPub.RequestUtterance(_id, category, subcategory);
+            }
+            else
+            {
+                Talking = true;
+            }
         }
 
         private void RetryRequest()
         {
-            //requestCounter++;
-            //RequestUtterance(pendingCategory, pendingSubcategory);
+            requestCounter++;
+            RequestUtterance(pendingCategory, pendingSubcategory);
         }
 
         public void WaitForResponse()
         {
-            //Stopwatch s = new Stopwatch();
-            //s.Start();
-            //while (PendingRequest || Retrying || SomeoneIsTalking)
-            //{
-            //    if (s.ElapsedMilliseconds > 3000)
-            //    {
-            //        PendingRequest = false;
-            //        Retrying = false;
-            //        pendingCategory = "";
-            //        pendingSubcategory = "";
-            //        requestCounter = 0;
-            //        s.Stop();
-            //    }
-            //}
+            Stopwatch s = new Stopwatch();
+            s.Start();
+            while (PendingRequest || Retrying || SomeoneIsTalking)
+            {
+                if (s.ElapsedMilliseconds > 5000)
+                {
+                    PendingRequest = false;
+                    Retrying = false;
+                    pendingCategory = "";
+                    pendingSubcategory = "";
+                    requestCounter = 0;
+                    s.Stop();
+                }
+            }
         }
-
 
         void IFMLSpeechEvents.UtteranceFinished(string id)
         {
@@ -748,7 +735,7 @@ namespace EmotionalPlayer
                     portugueseSuit = "paus";
                     break;
                 case "Diamonds":
-                    portugueseSuit = "oúros";
+                    portugueseSuit = "ouros";
                     break;
                 case "Hearts":
                     portugueseSuit = "copas";
@@ -765,8 +752,8 @@ namespace EmotionalPlayer
         public string SubjectName(int id)
         {
             string subject = "";
-            if (_agentType.StartsWith(Consts.AGENT_TYPE_GROUP))
-            {
+            //if (_agentType.StartsWith(Consts.AGENT_TYPE_GROUP))
+            //{
                 string[] teams = new string[] { "T0", "T1" };
                 if (id == _id || id == ((_id + 2) % 4))
                 {
@@ -776,28 +763,28 @@ namespace EmotionalPlayer
                 {
                     subject = teams[(_teamId + 1) % 2];
                 }
-            }
-            else if (_agentType.StartsWith(Consts.AGENT_TYPE_INDIVIDUAL))
-            {
-                switch (id)
-                {
-                    case 0:
-                        subject = "P0";
-                        break;
-                    case 1:
-                        subject = "P1";
-                        break;
-                    case 2:
-                        subject = "P2";
-                        break;
-                    case 3:
-                        subject = "P3";
-                        break;
-                    default:
-                        Console.WriteLine("Unknown Player ID");
-                        break;
-                }
-            }
+            //}
+            //else if (_agentType.StartsWith(Consts.AGENT_TYPE_INDIVIDUAL))
+            //{
+            //    switch (id)
+            //    {
+            //        case 0:
+            //            subject = "P0";
+            //            break;
+            //        case 1:
+            //            subject = "P1";
+            //            break;
+            //        case 2:
+            //            subject = "P2";
+            //            break;
+            //        case 3:
+            //            subject = "P3";
+            //            break;
+            //        default:
+            //            Console.WriteLine("Unknown Player ID");
+            //            break;
+            //    }
+            //}
             return subject;
         }
 
