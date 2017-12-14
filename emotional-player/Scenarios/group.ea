@@ -8,73 +8,73 @@
 					"AppraisalWeight": 1,
 					"Rules": [
 						{
-							"EventName": "Event(Property-Change, SELF, Game(End), LostDouble)",
+							"EventName": "Event(Property-Change, SELF, Game([x]), LostDouble)",
 							"Conditions":
 								{
-									"Set": []
+									"Set": ["End = [x]"]
 								},
 							"Desirability": -10,
 							"Praiseworthiness": -10
 						}, 
 						{
-							"EventName": "Event(Property-Change, SELF, Game(End), LostQuad)",
+							"EventName": "Event(Property-Change, SELF, Game([x]), LostQuad)",
 							"Conditions":
 								{
-									"Set": []
+									"Set": ["End = [x]"]
 								},
 							"Desirability": -10,
 							"Praiseworthiness": -10
 						}, 
 						{
-							"EventName": "Event(Property-Change, SELF, Game(End), LostSingle)",
+							"EventName": "Event(Property-Change, SELF, Game([x]), LostSingle)",
 							"Conditions":
 								{
-									"Set": []
+									"Set": ["End = [x]"]
 								},
 							"Desirability": -10,
 							"Praiseworthiness": -10
 						}, 
 						{
-							"EventName": "Event(Property-Change, SELF, Game(End), WinDouble)",
+							"EventName": "Event(Property-Change, SELF, Game([x]), WinDouble)",
 							"Conditions":
 								{
-									"Set": []
+									"Set": ["End = [x]"]
 								},
 							"Desirability": 10,
 							"Praiseworthiness": 10
 						}, 
 						{
-							"EventName": "Event(Property-Change, SELF, Game(End), WinQuad)",
+							"EventName": "Event(Property-Change, SELF, Game([x]), WinQuad)",
 							"Conditions":
 								{
-									"Set": []
+									"Set": ["End = [x]"]
 								},
 							"Desirability": 10,
 							"Praiseworthiness": 10
 						}, 
 						{
-							"EventName": "Event(Property-Change, SELF, Game(End), WinSingle)",
+							"EventName": "Event(Property-Change, SELF, Game([x]), WinSingle)",
 							"Conditions":
 								{
-									"Set": []
+									"Set": ["End = [x]"]
 								},
 							"Desirability": 10,
 							"Praiseworthiness": 10
 						}, 
 						{
-							"EventName": "Event(Property-Change, SELF, Session(End), Lost)",
+							"EventName": "Event(Property-Change, SELF, Session([x]), Lost)",
 							"Conditions":
 								{
-									"Set": []
+									"Set": ["End = [x]"]
 								},
 							"Desirability": -10,
 							"Praiseworthiness": -10
 						}, 
 						{
-							"EventName": "Event(Property-Change, SELF, Session(End), Win)",
+							"EventName": "Event(Property-Change, SELF, Session([x]), Win)",
 							"Conditions":
 								{
-									"Set": []
+									"Set": ["End = [x]"]
 								},
 							"Desirability": 10,
 							"Praiseworthiness": 10

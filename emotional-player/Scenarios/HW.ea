@@ -6,7 +6,120 @@
 			"AppraisalRules":
 				{
 					"AppraisalWeight": 1,
-					"Rules": []
+          "Rules": [
+            {
+              "EventName": "Event(Property-Change, SELF, Game([x]), LostDouble)",
+              "Conditions": {
+                "Set": [ "End = [x]" ]
+              },
+              "Desirability": -10,
+              "Praiseworthiness": -10
+            },
+            {
+              "EventName": "Event(Property-Change, SELF, Game([x]), LostQuad)",
+              "Conditions": {
+                "Set": [ "End = [x]" ]
+              },
+              "Desirability": -10,
+              "Praiseworthiness": -10
+            },
+            {
+              "EventName": "Event(Property-Change, SELF, Game([x]), LostSingle)",
+              "Conditions": {
+                "Set": [ "End = [x]" ]
+              },
+              "Desirability": -10,
+              "Praiseworthiness": -10
+            },
+            {
+              "EventName": "Event(Property-Change, SELF, Game([x]), WinDouble)",
+              "Conditions": {
+                "Set": [ "End = [x]" ]
+              },
+              "Desirability": 10,
+              "Praiseworthiness": 10
+            },
+            {
+              "EventName": "Event(Property-Change, SELF, Game([x]), WinQuad)",
+              "Conditions": {
+                "Set": [ "End = [x]" ]
+              },
+              "Desirability": 10,
+              "Praiseworthiness": 10
+            },
+            {
+              "EventName": "Event(Property-Change, SELF, Game([x]), WinSingle)",
+              "Conditions": {
+                "Set": [ "End = [x]" ]
+              },
+              "Desirability": 10,
+              "Praiseworthiness": 10
+            },
+            {
+              "EventName": "Event(Property-Change, SELF, Session([x]), Lost)",
+              "Conditions": {
+                "Set": [ "End = [x]" ]
+              },
+              "Desirability": -10,
+              "Praiseworthiness": -10
+            },
+            {
+              "EventName": "Event(Property-Change, SELF, Session([x]), Win)",
+              "Conditions": {
+                "Set": [ "End = [x]" ]
+              },
+              "Desirability": 10,
+              "Praiseworthiness": 10
+            },
+            {
+              "EventName": "Event(Property-Change, SELF, Trick(Score), [score])",
+              "Conditions": {
+                "Set": [ "[score] >= 9", "Trick(Increase) = True" ]
+              },
+              "Desirability": 0,
+              "Praiseworthiness": 6
+            },
+            {
+              "EventName": "Event(Property-Change, SELF, Trick(Score), [score])",
+              "Conditions": {
+                "Set": [ "[score] <= -9", "Trick(Increase) = True" ]
+              },
+              "Desirability": 0,
+              "Praiseworthiness": -6
+            },
+            {
+              "EventName": "Event(Property-Change, SELF, Trick(Score), [score])",
+              "Conditions": {
+                "Set": [ "[score] >= 9", "Trick(Increase) = False" ]
+              },
+              "Desirability": 6,
+              "Praiseworthiness": 0
+            },
+            {
+              "EventName": "Event(Property-Change, SELF, Trick(Score), [score])",
+              "Conditions": {
+                "Set": [ "[score] <= -9", "Trick(Increase) = False" ]
+              },
+              "Desirability": -6,
+              "Praiseworthiness": 0
+            },
+            {
+              "EventName": "Event(Property-Change, [pointGiver], Trick(Score), [score])",
+              "Conditions": {
+                "Set": [ "[score] <= -9", "Player([pointGiver]) = Opponent" ]
+              },
+              "Desirability": -6,
+              "Praiseworthiness": 0
+            },
+            {
+              "EventName": "Event(Property-Change, [pointGiver], Trick(Score), [score])",
+              "Conditions": {
+                "Set": [ "[score] >= 9", "Player([pointGiver]) = Opponent" ]
+              },
+              "Desirability": 6,
+              "Praiseworthiness": 0
+            }
+          ]
 				},
 			"EmotionDispositions": [
 				{
